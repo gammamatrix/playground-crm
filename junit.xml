@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/app/phpunit.xml.dist" tests="31" assertions="182" errors="0" failures="0" skipped="0" time="3.643507">
+    <testsuite name="Unit" tests="15" assertions="40" errors="0" failures="0" skipped="0" time="0.678850">
+      <testsuite name="Tests\Unit\Playground\Crm\Models\Client\ModelTest" file="/app/tests/Unit/Models/Client/ModelTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.302039">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="114" class="Tests\Unit\Playground\Crm\Models\Client\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Client.ModelTest" assertions="1" time="0.232600"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="275" class="Tests\Unit\Playground\Crm\Models\Client\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Client.ModelTest" assertions="4" time="0.036607"/>
+        <testcase name="test_model_factory_make" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="291" class="Tests\Unit\Playground\Crm\Models\Client\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Client.ModelTest" assertions="3" time="0.032831"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Playground\Crm\Models\Contact\ModelTest" file="/app/tests/Unit/Models/Contact/ModelTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.093298">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="114" class="Tests\Unit\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Contact.ModelTest" assertions="1" time="0.046213"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="275" class="Tests\Unit\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Contact.ModelTest" assertions="4" time="0.023657"/>
+        <testcase name="test_model_factory_make" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="291" class="Tests\Unit\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Contact.ModelTest" assertions="3" time="0.023428"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Playground\Crm\Models\Location\ModelTest" file="/app/tests/Unit/Models/Location/ModelTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.095707">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="114" class="Tests\Unit\Playground\Crm\Models\Location\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Location.ModelTest" assertions="1" time="0.048066"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="275" class="Tests\Unit\Playground\Crm\Models\Location\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Location.ModelTest" assertions="4" time="0.024277"/>
+        <testcase name="test_model_factory_make" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="291" class="Tests\Unit\Playground\Crm\Models\Location\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Location.ModelTest" assertions="3" time="0.023364"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Playground\Crm\Models\Organization\ModelTest" file="/app/tests/Unit/Models/Organization/ModelTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.095387">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="114" class="Tests\Unit\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Organization.ModelTest" assertions="1" time="0.046918"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="275" class="Tests\Unit\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Organization.ModelTest" assertions="4" time="0.025735"/>
+        <testcase name="test_model_factory_make" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="291" class="Tests\Unit\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Unit.Playground.Crm.Models.Organization.ModelTest" assertions="3" time="0.022734"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Playground\Crm\Models\People\ModelTest" file="/app/tests/Unit/Models/People/ModelTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.092418">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="114" class="Tests\Unit\Playground\Crm\Models\People\ModelTest" classname="Tests.Unit.Playground.Crm.Models.People.ModelTest" assertions="1" time="0.044010"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="275" class="Tests\Unit\Playground\Crm\Models\People\ModelTest" classname="Tests.Unit.Playground.Crm.Models.People.ModelTest" assertions="4" time="0.023505"/>
+        <testcase name="test_model_factory_make" file="/app/vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php" line="291" class="Tests\Unit\Playground\Crm\Models\People\ModelTest" classname="Tests.Unit.Playground.Crm.Models.People.ModelTest" assertions="3" time="0.024903"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="16" assertions="142" errors="0" failures="0" skipped="0" time="2.964657">
+      <testsuite name="Tests\Feature\Playground\Crm\Console\Commands\About\CommandTest" file="/app/tests/Feature/Console/Commands/About/CommandTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.150129">
+        <testcase name="test_command_about_displays_package_information_and_succeed_with_code_0" file="/app/tests/Feature/Console/Commands/About/CommandTest.php" line="28" class="Tests\Feature\Playground\Crm\Console\Commands\About\CommandTest" classname="Tests.Feature.Playground.Crm.Console.Commands.About.CommandTest" assertions="2" time="0.150129"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Playground\Crm\Models\Client\ModelTest" file="/app/tests/Feature/Models/Client/ModelTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="0.583676">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="108" class="Tests\Feature\Playground\Crm\Models\Client\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Client.ModelTest" assertions="1" time="0.167369"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="527" class="Tests\Feature\Playground\Crm\Models\Client\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Client.ModelTest" assertions="24" time="0.251995"/>
+        <testcase name="test_factory_create" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="543" class="Tests\Feature\Playground\Crm\Models\Client\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Client.ModelTest" assertions="3" time="0.164313"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Playground\Crm\Models\Contact\ModelTest" file="/app/tests/Feature/Models/Contact/ModelTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="0.555788">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="108" class="Tests\Feature\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Contact.ModelTest" assertions="1" time="0.155623"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="527" class="Tests\Feature\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Contact.ModelTest" assertions="24" time="0.236021"/>
+        <testcase name="test_factory_create" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="543" class="Tests\Feature\Playground\Crm\Models\Contact\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Contact.ModelTest" assertions="3" time="0.164143"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Playground\Crm\Models\Location\ModelTest" file="/app/tests/Feature/Models/Location/ModelTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="0.553474">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="108" class="Tests\Feature\Playground\Crm\Models\Location\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Location.ModelTest" assertions="1" time="0.153985"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="527" class="Tests\Feature\Playground\Crm\Models\Location\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Location.ModelTest" assertions="24" time="0.237062"/>
+        <testcase name="test_factory_create" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="543" class="Tests\Feature\Playground\Crm\Models\Location\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Location.ModelTest" assertions="3" time="0.162427"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Playground\Crm\Models\Organization\ModelTest" file="/app/tests/Feature/Models/Organization/ModelTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="0.559066">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="108" class="Tests\Feature\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Organization.ModelTest" assertions="1" time="0.153672"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="527" class="Tests\Feature\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Organization.ModelTest" assertions="24" time="0.241885"/>
+        <testcase name="test_factory_create" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="543" class="Tests\Feature\Playground\Crm\Models\Organization\ModelTest" classname="Tests.Feature.Playground.Crm.Models.Organization.ModelTest" assertions="3" time="0.163509"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Playground\Crm\Models\People\ModelTest" file="/app/tests/Feature/Models/People/ModelTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="0.562524">
+        <testcase name="test_model_instance" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="108" class="Tests\Feature\Playground\Crm\Models\People\ModelTest" classname="Tests.Feature.Playground.Crm.Models.People.ModelTest" assertions="1" time="0.156385"/>
+        <testcase name="test_verify_model_relationships" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="527" class="Tests\Feature\Playground\Crm\Models\People\ModelTest" classname="Tests.Feature.Playground.Crm.Models.People.ModelTest" assertions="24" time="0.240930"/>
+        <testcase name="test_factory_create" file="/app/vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php" line="543" class="Tests\Feature\Playground\Crm\Models\People\ModelTest" classname="Tests.Feature.Playground.Crm.Models.People.ModelTest" assertions="3" time="0.165209"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

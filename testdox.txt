@@ -1,0 +1,53 @@
+Command (Tests\Feature\Playground\Crm\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Model (Tests\Feature\Playground\Crm\Models\Client\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Crm\Models\Contact\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Crm\Models\Location\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Crm\Models\Organization\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Crm\Models\People\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Unit\Playground\Crm\Models\Client\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Crm\Models\Contact\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Crm\Models\Location\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Crm\Models\Organization\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Crm\Models\People\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
