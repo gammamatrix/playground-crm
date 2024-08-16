@@ -1,40 +1,18 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Tests\Unit\Playground\Crm\Models;
 
-use Playground\Crm\ServiceProvider;
-use Playground\ServiceProvider as PlaygroundServiceProvider;
 use Playground\Test\Unit\Models\ModelCase as BaseModelCase;
+use Tests\Unit\Playground\Crm\PackageProviders;
 
 /**
  * \Tests\Unit\Playground\Crm\Models\ModelCase
  */
 class ModelCase extends BaseModelCase
 {
-    protected function getPackageProviders($app)
-    {
-        return [
-            PlaygroundServiceProvider::class,
-            ServiceProvider::class,
-        ];
-    }
-
-    /**
-     * Set up the environment.
-     *
-     * @param  \Illuminate\Foundation\Application  $app
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        $app['config']->set('auth.providers.users.model', 'Playground\\Test\\Models\\User');
-        $app['config']->set('playground-auth.verify', 'user');
-        $app['config']->set('auth.testing.password', 'password');
-        $app['config']->set('auth.testing.hashed', false);
-
-        $app['config']->set('playground-crm.load.migrations', true);
-    }
+    use PackageProviders;
 }

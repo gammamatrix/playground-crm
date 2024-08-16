@@ -26,8 +26,6 @@ composer require gammamatrix/playground-crm
 
 Playground CRM provides information in the `artisan about` command.
 
-<!-- <img src="resources/docs/artisan-about-playground-crm.png" alt="screenshot of artisan about command with Playground CRM."> -->
-
 ## Configuration
 
 Migrations are disabled by default. This package may sometimes be installed where another system handles the migrations.
@@ -37,6 +35,34 @@ See the contents of the published config file: [config/playground-crm.php](confi
 You can publish the config file with:
 ```bash
 php artisan vendor:publish --provider="Playground\Crm\ServiceProvider" --tag="playground-config"
+```
+
+## Cloc
+
+```sh
+composer cloc
+```
+
+```
+➜  playground-crm git:(develop) ✗ composer cloc
+> cloc --exclude-dir=node_modules,output,vendor .
+      60 text files.
+      49 unique files.
+      12 files ignored.
+
+github.com/AlDanial/cloc v 1.98  T=0.12 s (403.2 files/s, 152885.2 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+JSON                             7              0              0          13958
+PHP                             34            306            983           2680
+YAML                             1              5              0            275
+XML                              3              0              7            215
+Markdown                         3             43              0             93
+INI                              1              3              0             12
+-------------------------------------------------------------------------------
+SUM:                            49            357            990          17233
+-------------------------------------------------------------------------------
 ```
 
 ### Environment Variables
@@ -54,7 +80,7 @@ This package includes [factories](database/factories), models and [migrations](d
 - [Contacts](src/Models/Contact.php)
 - [Locations](src/Models/Location.php)
 - [Organizations](src/Models/Organization.php)
-- [Peoples](src/Models/People.php)
+- [People](src/Models/People.php)
 
 ## Migrations
 

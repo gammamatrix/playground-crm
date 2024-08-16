@@ -4,16 +4,16 @@
  */
 
 declare(strict_types=1);
-namespace Tests\Feature\Playground\Crm\Models;
+namespace Tests\Feature\Playground\Crm;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Playground\Test\Feature\Models\ModelCase as BaseModelCase;
+use Playground\Test\OrchestraTestCase;
 use Tests\Unit\Playground\Crm\PackageProviders;
 
 /**
- * \Tests\Feature\Playground\Crm\Models\ModelCase
+ * \Tests\Feature\Playground\Crm\TestCase
  */
-class ModelCase extends BaseModelCase
+class TestCase extends OrchestraTestCase
 {
     use DatabaseTransactions;
     use PackageProviders;

@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Database\Factories\Playground\Crm\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -44,6 +44,11 @@ class ClientFactory extends Factory
         ];
     }
 
+    // States: flags
+
+    /**
+     * @return Factory<Client>
+     */
     public function locked(): Factory
     {
         return $this->state(fn (array $attributes) => [
@@ -51,6 +56,9 @@ class ClientFactory extends Factory
         ]);
     }
 
+    /**
+     * @return Factory<Client>
+     */
     public function featured(): Factory
     {
         return $this->state(fn (array $attributes) => [

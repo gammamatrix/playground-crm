@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Playground\Crm\Models;
 
 use Playground\Models\Model;
@@ -12,29 +12,29 @@ use Playground\Models\Model;
  * \Playground\Crm\Models\Organization
  *
  * @property string $id
+ * @property ?string $organization_type
  * @property ?scalar $created_by_id
  * @property ?scalar $modified_by_id
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
- * @property string $organization_type
+ * @property ?string $matrix_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
- * @property ?Carbon $start_at
- * @property ?Carbon $planned_start_at
- * @property ?Carbon $end_at
- * @property ?Carbon $planned_end_at
- * @property ?Carbon $banned_at
  * @property ?Carbon $canceled_at
  * @property ?Carbon $closed_at
  * @property ?Carbon $embargo_at
  * @property ?Carbon $fixed_at
+ * @property ?Carbon $planned_end_at
+ * @property ?Carbon $planned_start_at
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
  * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
  * @property ?Carbon $suspended_at
+ * @property ?Carbon $timer_end_at
+ * @property ?Carbon $timer_start_at
  * @property int $gids
  * @property int $po
  * @property int $pg
@@ -61,6 +61,8 @@ use Playground\Models\Model;
  * @property bool $canceled
  * @property bool $closed
  * @property bool $completed
+ * @property bool $cron
+ * @property bool $duplicate
  * @property bool $featured
  * @property bool $fixed
  * @property bool $flagged
@@ -72,29 +74,33 @@ use Playground\Models\Model;
  * @property bool $problem
  * @property bool $published
  * @property bool $released
- * @property bool $retired
  * @property bool $resolved
- * @property bool $special
+ * @property bool $retired
+ * @property bool $sms
  * @property bool $suspended
+ * @property bool $unknown
+ * @property string $locale
  * @property string $label
  * @property string $title
  * @property string $byline
- * @property string $timezone
- * @property string $slug
+ * @property ?string $slug
  * @property string $url
  * @property string $description
  * @property string $introduction
- * @property string $content
- * @property string $summary
+ * @property ?string $content
+ * @property ?string $summary
+ * @property ?string $phone
  * @property string $icon
  * @property string $image
  * @property string $avatar
- * @property array $ui
- * @property array $assets
- * @property array $meta
- * @property array $notes
- * @property array $options
- * @property array $sources
+ * @property ?array $ui
+ * @property ?array $address
+ * @property ?array $assets
+ * @property ?array $contact
+ * @property ?array $meta
+ * @property ?array $notes
+ * @property ?array $options
+ * @property ?array $sources
  */
 class Organization extends Model
 {
@@ -106,28 +112,29 @@ class Organization extends Model
      * @var array<string, mixed>
      */
     protected $attributes = [
+        'organization_type' => null,
         'created_by_id' => null,
         'modified_by_id' => null,
         'owned_by_id' => null,
         'parent_id' => null,
-        'organization_type' => null,
+        'matrix_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
-        'start_at' => null,
-        'planned_start_at' => null,
-        'end_at' => null,
-        'planned_end_at' => null,
         'canceled_at' => null,
         'closed_at' => null,
         'embargo_at' => null,
         'fixed_at' => null,
+        'planned_end_at' => null,
+        'planned_start_at' => null,
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
         'resumed_at' => null,
         'resolved_at' => null,
         'suspended_at' => null,
+        'timer_end_at' => null,
+        'timer_start_at' => null,
         'gids' => 0,
         'po' => 0,
         'pg' => 0,
@@ -139,7 +146,7 @@ class Organization extends Model
         'status' => 0,
         'rank' => 0,
         'size' => 0,
-        'matrix' => null,
+        'matrix' => '{}',
         'x' => null,
         'y' => null,
         'z' => null,
@@ -154,6 +161,8 @@ class Organization extends Model
         'canceled' => false,
         'closed' => false,
         'completed' => false,
+        'cron' => false,
+        'duplicate' => false,
         'featured' => false,
         'fixed' => false,
         'flagged' => false,
@@ -165,11 +174,12 @@ class Organization extends Model
         'problem' => false,
         'published' => false,
         'released' => false,
-        'retired' => false,
         'resolved' => false,
-        'special' => false,
+        'retired' => false,
+        'sms' => false,
         'suspended' => false,
         'unknown' => false,
+        'locale' => '',
         'label' => '',
         'title' => '',
         'byline' => '',
@@ -179,11 +189,14 @@ class Organization extends Model
         'introduction' => '',
         'content' => null,
         'summary' => null,
+        'phone' => null,
         'icon' => '',
         'image' => '',
         'avatar' => '',
         'ui' => '{}',
+        'address' => '{}',
         'assets' => '{}',
+        'contact' => '{}',
         'meta' => '{}',
         'notes' => '[]',
         'options' => '{}',
@@ -196,23 +209,24 @@ class Organization extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'organization_type',
         'owned_by_id',
         'parent_id',
-        'organization_type',
-        'start_at',
-        'planned_start_at',
-        'end_at',
-        'planned_end_at',
+        'matrix_id',
         'canceled_at',
         'closed_at',
         'embargo_at',
         'fixed_at',
+        'planned_end_at',
+        'planned_start_at',
         'postponed_at',
         'published_at',
         'released_at',
         'resumed_at',
         'resolved_at',
         'suspended_at',
+        'timer_end_at',
+        'timer_start_at',
         'gids',
         'po',
         'pg',
@@ -239,6 +253,7 @@ class Organization extends Model
         'canceled',
         'closed',
         'completed',
+        'cron',
         'duplicate',
         'featured',
         'fixed',
@@ -251,11 +266,12 @@ class Organization extends Model
         'problem',
         'published',
         'released',
-        'retired',
         'resolved',
-        'special',
+        'retired',
+        'sms',
         'suspended',
         'unknown',
+        'locale',
         'label',
         'title',
         'byline',
@@ -265,11 +281,14 @@ class Organization extends Model
         'introduction',
         'content',
         'summary',
+        'phone',
         'icon',
         'image',
         'avatar',
         'ui',
+        'address',
         'assets',
+        'contact',
         'meta',
         'options',
         'sources',
@@ -283,23 +302,24 @@ class Organization extends Model
     protected function casts(): array
     {
         return [
+            'organization_type' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
-            'start_at' => 'datetime',
-            'planned_start_at' => 'datetime',
-            'end_at' => 'datetime',
-            'planned_end_at' => 'datetime',
             'canceled_at' => 'datetime',
             'closed_at' => 'datetime',
             'embargo_at' => 'datetime',
             'fixed_at' => 'datetime',
+            'planned_end_at' => 'datetime',
+            'planned_start_at' => 'datetime',
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
             'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
             'suspended_at' => 'datetime',
+            'timer_end_at' => 'datetime',
+            'timer_start_at' => 'datetime',
             'gids' => 'integer',
             'po' => 'integer',
             'pg' => 'integer',
@@ -326,6 +346,7 @@ class Organization extends Model
             'canceled' => 'boolean',
             'closed' => 'boolean',
             'completed' => 'boolean',
+            'cron' => 'boolean',
             'duplicate' => 'boolean',
             'featured' => 'boolean',
             'fixed' => 'boolean',
@@ -338,11 +359,12 @@ class Organization extends Model
             'problem' => 'boolean',
             'published' => 'boolean',
             'released' => 'boolean',
-            'retired' => 'boolean',
             'resolved' => 'boolean',
-            'special' => 'boolean',
+            'retired' => 'boolean',
+            'sms' => 'boolean',
             'suspended' => 'boolean',
             'unknown' => 'boolean',
+            'locale' => 'string',
             'label' => 'string',
             'title' => 'string',
             'byline' => 'string',
@@ -352,12 +374,14 @@ class Organization extends Model
             'introduction' => 'string',
             'content' => 'string',
             'summary' => 'string',
-            'locale' => 'string',
+            'phone' => 'string',
             'icon' => 'string',
             'image' => 'string',
             'avatar' => 'string',
             'ui' => 'array',
+            'address' => 'array',
             'assets' => 'array',
+            'contact' => 'array',
             'meta' => 'array',
             'notes' => 'array',
             'options' => 'array',
