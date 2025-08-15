@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Crm;
 
 use Illuminate\Foundation\Console\AboutCommand;
@@ -14,7 +16,7 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
  */
 class ServiceProvider extends AuthServiceProvider
 {
-    public const VERSION = '73.0.0';
+    public const string VERSION = '73.0.0';
 
     public string $package = 'playground-crm';
 
@@ -27,7 +29,10 @@ class ServiceProvider extends AuthServiceProvider
     public function boot()
     {
         /**
-         * @var array<string, mixed> $config
+         * @var array{
+         *      about: bool,
+         *      load: array{migrations: bool}
+         *  } $config
          */
         $config = config($this->package);
 
