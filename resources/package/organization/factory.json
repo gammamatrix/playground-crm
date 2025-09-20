@@ -1,0 +1,16 @@
+{
+    "class": "OrganizationFactory",
+    "config": "playground-crm",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Crm/Models/OrganizationFactory",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "OrganizationFactory",
+    "namespace": "Database/Factories/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "model": "Organization",
+    "model_fqdn": "Playground/Crm/Models/Organization",
+    "recipe": "crm",
+    "type": "playground-model",
+    "models": []
+}

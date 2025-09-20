@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-crm",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Feature/Playground/Crm/Models/People/ModelTest",
+    "model": "People",
+    "model_fqdn": "Playground/Crm/Models/People",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "People",
+    "namespace": "Tests/Feature/Playground/Crm/Models/People",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "playground": true,
+    "suite": "feature",
+    "type": "model",
+    "uses": [
+        "Tests/Feature/Playground/Crm/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

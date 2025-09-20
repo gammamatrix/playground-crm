@@ -48,20 +48,14 @@ class OrganizationFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Organization>
-     */
-    public function locked(): Factory
+    public function locked(): OrganizationFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Organization>
-     */
-    public function featured(): Factory
+    public function featured(): OrganizationFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,

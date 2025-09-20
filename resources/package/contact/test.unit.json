@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-crm",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Unit/Playground/Crm/Models/Contact/ModelTest",
+    "model": "Contact",
+    "model_fqdn": "Playground/Crm/Models/Contact",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Contact",
+    "namespace": "Tests/Unit/Playground/Crm/Models/Contact",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "playground": true,
+    "suite": "unit",
+    "type": "model",
+    "uses": [
+        "Tests/Unit/Playground/Crm/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

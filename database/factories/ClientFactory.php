@@ -48,20 +48,14 @@ class ClientFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Client>
-     */
-    public function locked(): Factory
+    public function locked(): ClientFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Client>
-     */
-    public function featured(): Factory
+    public function featured(): ClientFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,

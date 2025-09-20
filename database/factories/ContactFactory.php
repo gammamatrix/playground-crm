@@ -48,20 +48,14 @@ class ContactFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Contact>
-     */
-    public function locked(): Factory
+    public function locked(): ContactFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Contact>
-     */
-    public function featured(): Factory
+    public function featured(): ContactFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,

@@ -1,0 +1,16 @@
+{
+    "class": "ContactFactory",
+    "config": "playground-crm",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Crm/Models/ContactFactory",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "ContactFactory",
+    "namespace": "Database/Factories/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "model": "Contact",
+    "model_fqdn": "Playground/Crm/Models/Contact",
+    "recipe": "crm",
+    "type": "playground-model",
+    "models": []
+}

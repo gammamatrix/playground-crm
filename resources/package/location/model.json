@@ -1,23 +1,23 @@
 {
-    "class": "Client",
+    "class": "Location",
     "config": "playground-crm",
-    "fqdn": "Playground/Crm/Models/Client",
+    "fqdn": "Playground/Crm/Models/Location",
     "module": "CRM",
     "module_slug": "crm",
-    "name": "Client",
+    "name": "Location",
     "namespace": "Playground/Crm",
     "organization": "Playground",
     "package": "playground-crm",
-    "model": "Client",
+    "model": "Location",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Clients",
-    "model_singular": "Client",
-    "model_slug": "client",
-    "model_slug_plural": "clients",
+    "model_plural": "Locations",
+    "model_singular": "Location",
+    "model_slug": "location",
+    "model_slug_plural": "locations",
     "recipe": "crm",
     "type": "playground-model",
-    "table": "crm_clients",
+    "table": "crm_locations",
     "perPage": null,
     "controller": true,
     "factory": true,
@@ -39,7 +39,7 @@
         }
     },
     "attributes": {
-        "client_type": null,
+        "location_type": null,
         "created_by_id": null,
         "modified_by_id": null,
         "owned_by_id": null,
@@ -130,7 +130,7 @@
         "sources": "{}"
     },
     "casts": {
-        "client_type": "string",
+        "location_type": "string",
         "created_at": "datetime",
         "updated_at": "datetime",
         "deleted_at": "datetime",
@@ -216,7 +216,7 @@
         "sources": "array"
     },
     "fillable": [
-        "client_type",
+        "location_type",
         "owned_by_id",
         "parent_id",
         "matrix_id",
@@ -312,8 +312,8 @@
                 "type": "string"
             },
             {
-                "column": "client_type",
-                "label": "Client Type",
+                "column": "location_type",
+                "label": "Location Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1056,8 +1056,8 @@
             "type": "string"
         },
         {
-            "column": "client_type",
-            "label": "Client Type",
+            "column": "location_type",
+            "label": "Location Type",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1680,7 +1680,7 @@
         }
     ],
     "create": {
-        "migration": "2010_09_30_000000_create_crm_clients_table",
+        "migration": "2010_09_30_000000_create_crm_locations_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
@@ -1690,9 +1690,9 @@
             "with": false
         },
         "ids": {
-            "client_type": {
-                "column": "client_type",
-                "label": "Client Type",
+            "location_type": {
+                "column": "location_type",
+                "label": "Location Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -1883,17 +1883,6 @@
                 "readOnly": false,
                 "type": "dateTime"
             },
-            "resumed_at": {
-                "column": "resumed_at",
-                "label": "Resumed at",
-                "description": "",
-                "icon": "",
-                "html": false,
-                "index": false,
-                "nullable": true,
-                "readOnly": false,
-                "type": "dateTime"
-            },
             "resolved_at": {
                 "column": "resolved_at",
                 "label": "Resolved at",
@@ -1901,6 +1890,17 @@
                 "icon": "",
                 "html": false,
                 "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "type": "dateTime"
+            },
+            "resumed_at": {
+                "column": "resumed_at",
+                "label": "Resumed at",
+                "description": "",
+                "icon": "",
+                "html": false,
+                "index": false,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -2758,6 +2758,9 @@
         }
     },
     "uses": [
-        "Playground/Models/Model"
+        "Playground/Models/Model",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Database/Factories/Playground/Crm/Models/LocationFactory",
+        "Illuminate/Support/Carbon"
     ]
 }

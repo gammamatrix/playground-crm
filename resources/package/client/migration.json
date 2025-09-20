@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_crm_clients_table",
+    "config": "playground-crm",
+    "model": "Client",
+    "model_fqdn": "Playground/Crm/Models/Client",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Client",
+    "namespace": "Playground/Crm",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "table": "crm_clients",
+    "type": "playground-model",
+    "models": [],
+    "create": true,
+    "update": false
+}

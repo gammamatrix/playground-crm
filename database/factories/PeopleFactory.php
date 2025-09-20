@@ -48,20 +48,14 @@ class PeopleFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<People>
-     */
-    public function locked(): Factory
+    public function locked(): PeopleFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<People>
-     */
-    public function featured(): Factory
+    public function featured(): PeopleFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,

@@ -48,20 +48,14 @@ class LocationFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Location>
-     */
-    public function locked(): Factory
+    public function locked(): LocationFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Location>
-     */
-    public function featured(): Factory
+    public function featured(): LocationFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,

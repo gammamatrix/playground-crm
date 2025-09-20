@@ -10,6 +10,7 @@ namespace Playground\Crm;
 
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
+use Illuminate\Support\Facades\App;
 
 /**
  * \Playground\Crm\ServiceProvider
@@ -30,15 +31,15 @@ class ServiceProvider extends AuthServiceProvider
     {
         /**
          * @var array{
-         *      about: bool,
-         *      load: array{migrations: bool}
-         *  } $config
+         *     about: bool,
+         *     load: array{migrations: bool}
+         * } $config
          */
         $config = config($this->package);
 
         if (! empty($config['load']) && is_array($config['load'])) {
 
-            if ($this->app->runningInConsole()) {
+            if (App::runningInConsole()) {
                 // Publish configuration
                 $this->publishes([
                     sprintf('%1$s/config/%2$s.php', dirname(__DIR__), $this->package) => config_path(sprintf('%1$s.php', $this->package)),
@@ -79,7 +80,7 @@ class ServiceProvider extends AuthServiceProvider
             '2010_09_30_000000_create_crm_contacts_table.php',
             '2010_09_30_000000_create_crm_locations_table.php',
             '2010_09_30_000000_create_crm_organizations_table.php',
-            '2010_09_30_000000_create_crm_peoples_table.php',
+            '2010_09_30_000000_create_crm_people_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }

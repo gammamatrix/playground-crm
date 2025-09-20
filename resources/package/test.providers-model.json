@@ -1,0 +1,24 @@
+{
+    "class": "PackageProviders",
+    "config": "playground-crm",
+    "extends": "",
+    "fqdn": "Tests/Unit/Playground/Crm/PackageProviders",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "PackageProviders",
+    "namespace": "Tests/Unit/Playground/Crm",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "playground": true,
+    "suite": "unit",
+    "type": "providers-model",
+    "uses": [],
+    "models": [],
+    "package_providers": [
+        "\\Playground\\Test\\ServiceProvider::class",
+        "\\Playground\\ServiceProvider::class",
+        "\\Playground\\Crm\\ServiceProvider::class"
+    ]
+}

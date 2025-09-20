@@ -1,0 +1,22 @@
+{
+    "class": "ModelCase",
+    "config": "playground-crm",
+    "extends": "Playground/Test/Feature/Models/ModelCase as BaseModelCase",
+    "fqdn": "Tests/Feature/Playground/Crm/Models/Models",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "ModelCase",
+    "namespace": "Tests/Feature/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "playground": true,
+    "suite": "feature",
+    "type": "model-case",
+    "uses": [
+        "Tests/Unit/Playground/Crm/PackageProviders"
+    ],
+    "models": [],
+    "package_providers": []
+}

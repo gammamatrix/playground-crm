@@ -1,0 +1,16 @@
+{
+    "class": "ClientFactory",
+    "config": "playground-crm",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Crm/Models/ClientFactory",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "ClientFactory",
+    "namespace": "Database/Factories/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "model": "Client",
+    "model_fqdn": "Playground/Crm/Models/Client",
+    "recipe": "crm",
+    "type": "playground-model",
+    "models": []
+}

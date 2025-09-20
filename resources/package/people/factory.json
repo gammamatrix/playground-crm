@@ -1,0 +1,16 @@
+{
+    "class": "PeopleFactory",
+    "config": "playground-crm",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Crm/Models/PeopleFactory",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "PeopleFactory",
+    "namespace": "Database/Factories/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "model": "People",
+    "model_fqdn": "Playground/Crm/Models/People",
+    "recipe": "crm",
+    "type": "playground-model",
+    "models": []
+}
