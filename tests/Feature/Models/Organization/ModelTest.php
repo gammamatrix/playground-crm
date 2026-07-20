@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Models\Organization;
 
+use Playground\Crm\Models\Organization;
+use Playground\Models\User;
 use Tests\Feature\Playground\Crm\Models\ModelCase;
 
 /**
@@ -15,7 +17,7 @@ use Tests\Feature\Playground\Crm\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Crm\Models\Organization::class;
+    protected string $modelClass = Organization::class;
 
     protected bool $hasRelationships = true;
 
@@ -23,22 +25,22 @@ class ModelTest extends ModelCase
         'creator' => [
             'key' => 'created_by_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'modifier' => [
             'key' => 'modified_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'owner' => [
             'key' => 'owned_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'parent' => [
             'key' => 'parent_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Crm\Models\Organization::class,
+            'modelClass' => Organization::class,
         ],
     ];
 }

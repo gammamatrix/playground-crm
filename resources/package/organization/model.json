@@ -2758,9 +2758,9 @@
         }
     },
     "uses": [
-        "Playground/Models/Model",
-        "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Database/Factories/Playground/Crm/Models/OrganizationFactory",
-        "Illuminate/Support/Carbon"
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Support/Carbon",
+        "Playground/Models/Model"
     ]
 }

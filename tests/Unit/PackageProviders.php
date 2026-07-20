@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Crm;
 
+use Playground\ServiceProvider;
+
 /**
  * \Tests\Unit\Playground\Crm\PackageProviders
  */
@@ -19,7 +21,7 @@ trait PackageProviders
     {
         return [
             \Playground\Test\ServiceProvider::class,
-            \Playground\ServiceProvider::class,
+            ServiceProvider::class,
             \Playground\Crm\ServiceProvider::class,
         ];
     }

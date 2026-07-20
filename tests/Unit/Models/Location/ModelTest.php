@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Crm\Models\Location;
 
+use Playground\Crm\Models\Location;
 use Tests\Unit\Playground\Crm\Models\ModelCase;
 
 /**
@@ -15,7 +16,7 @@ use Tests\Unit\Playground\Crm\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Crm\Models\Location::class;
+    protected string $modelClass = Location::class;
 
     protected bool $hasRelationships = true;
 

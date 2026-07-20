@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Crm\Models\Contact;
 
+use Playground\Crm\Models\Contact;
 use Tests\Unit\Playground\Crm\Models\ModelCase;
 
 /**
@@ -15,7 +16,7 @@ use Tests\Unit\Playground\Crm\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Crm\Models\Contact::class;
+    protected string $modelClass = Contact::class;
 
     protected bool $hasRelationships = true;
 
