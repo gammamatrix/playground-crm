@@ -30,7 +30,36 @@
     "test": true,
     "extends": "Model",
     "implements": [],
-    "HasOne": [],
+    "HasOne": {
+        "contact": {
+            "comment": "The contact of the client.",
+            "accessor": "contact",
+            "related": "Contact",
+            "foreignKey": "id",
+            "localKey": "contact_id"
+        },
+        "location": {
+            "comment": "The location of the client.",
+            "accessor": "location",
+            "related": "Location",
+            "foreignKey": "id",
+            "localKey": "location_id"
+        },
+        "organization": {
+            "comment": "The organization of the client.",
+            "accessor": "organization",
+            "related": "Organization",
+            "foreignKey": "id",
+            "localKey": "organization_id"
+        },
+        "people": {
+            "comment": "The people of the client.",
+            "accessor": "people",
+            "related": "People",
+            "foreignKey": "id",
+            "localKey": "people_id"
+        }
+    },
     "HasMany": [],
     "scopes": {
         "sort": {
@@ -45,6 +74,10 @@
         "owned_by_id": null,
         "parent_id": null,
         "matrix_id": null,
+        "contact_id": null,
+        "location_id": null,
+        "organization_id": null,
+        "people_id": null,
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
@@ -57,8 +90,8 @@
         "postponed_at": null,
         "published_at": null,
         "released_at": null,
-        "resumed_at": null,
         "resolved_at": null,
+        "resumed_at": null,
         "suspended_at": null,
         "timer_end_at": null,
         "timer_start_at": null,
@@ -73,7 +106,7 @@
         "status": 0,
         "rank": 0,
         "size": 0,
-        "matrix": "{}",
+        "matrix": null,
         "x": null,
         "y": null,
         "z": null,
@@ -116,18 +149,19 @@
         "introduction": "",
         "content": null,
         "summary": null,
+        "email": null,
         "phone": null,
         "icon": "",
         "image": "",
         "avatar": "",
-        "ui": "{}",
+        "ui": null,
         "address": "{}",
-        "assets": "{}",
+        "assets": null,
         "contact": "{}",
-        "meta": "{}",
+        "meta": null,
         "notes": "[]",
-        "options": "{}",
-        "sources": "{}"
+        "options": null,
+        "sources": null
     },
     "casts": {
         "client_type": "string",
@@ -143,8 +177,8 @@
         "postponed_at": "datetime",
         "published_at": "datetime",
         "released_at": "datetime",
-        "resumed_at": "datetime",
         "resolved_at": "datetime",
+        "resumed_at": "datetime",
         "suspended_at": "datetime",
         "timer_end_at": "datetime",
         "timer_start_at": "datetime",
@@ -202,6 +236,7 @@
         "introduction": "string",
         "content": "string",
         "summary": "string",
+        "email": "string",
         "phone": "string",
         "icon": "string",
         "image": "string",
@@ -220,6 +255,10 @@
         "owned_by_id",
         "parent_id",
         "matrix_id",
+        "contact_id",
+        "location_id",
+        "organization_id",
+        "people_id",
         "canceled_at",
         "closed_at",
         "embargo_at",
@@ -229,8 +268,8 @@
         "postponed_at",
         "published_at",
         "released_at",
-        "resumed_at",
         "resolved_at",
+        "resumed_at",
         "suspended_at",
         "timer_end_at",
         "timer_start_at",
@@ -288,6 +327,7 @@
         "introduction",
         "content",
         "summary",
+        "email",
         "phone",
         "icon",
         "image",
@@ -321,7 +361,7 @@
             },
             {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -329,7 +369,7 @@
             },
             {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -337,7 +377,7 @@
             },
             {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -354,6 +394,38 @@
             {
                 "column": "matrix_id",
                 "label": "Matrix id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "contact_id",
+                "label": "Contact id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "location_id",
+                "label": "Location id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "organization_id",
+                "label": "Organization id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "people_id",
+                "label": "People id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -458,16 +530,16 @@
                 "type": "datetime"
             },
             {
-                "column": "resumed_at",
-                "label": "Resumed at",
+                "column": "resolved_at",
+                "label": "Resolved at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
                 "type": "datetime"
             },
             {
-                "column": "resolved_at",
-                "label": "Resolved at",
+                "column": "resumed_at",
+                "label": "Resumed at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -550,7 +622,7 @@
             {
                 "column": "featured",
                 "label": "Featured",
-                "icon": "fa-solid fa-star",
+                "icon": "fa-solid fa-star text-primary",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -558,7 +630,7 @@
             {
                 "column": "fixed",
                 "label": "Fixed",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -653,7 +725,7 @@
             },
             {
                 "column": "sms",
-                "label": "Sms",
+                "label": "SMS",
                 "icon": "fa-solid fa-comment-sms",
                 "nullable": true,
                 "unsigned": true,
@@ -761,6 +833,14 @@
                 "nullable": true,
                 "unsigned": true,
                 "type": "mediumText"
+            },
+            {
+                "column": "email",
+                "label": "Email",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "string"
             },
             {
                 "column": "phone",
@@ -1064,21 +1144,21 @@
         },
         {
             "column": "created_by_id",
-            "label": "Created by id",
+            "label": "Created by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "modified_by_id",
-            "label": "Modified by id",
+            "label": "Modified by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "owned_by_id",
-            "label": "Owned by id",
+            "label": "Owned by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1093,6 +1173,34 @@
         {
             "column": "matrix_id",
             "label": "Matrix id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "contact_id",
+            "label": "Contact id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "location_id",
+            "label": "Location id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "organization_id",
+            "label": "Organization id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "people_id",
+            "label": "People id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1182,15 +1290,15 @@
             "type": "string"
         },
         {
-            "column": "resumed_at",
-            "label": "Resumed at",
+            "column": "resolved_at",
+            "label": "Resolved at",
             "icon": "",
             "nullable": false,
             "type": "string"
         },
         {
-            "column": "resolved_at",
-            "label": "Resolved at",
+            "column": "resumed_at",
+            "label": "Resumed at",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1415,14 +1523,14 @@
         {
             "column": "featured",
             "label": "Featured",
-            "icon": "fa-solid fa-star",
+            "icon": "fa-solid fa-star text-primary",
             "nullable": false,
             "type": "boolean"
         },
         {
             "column": "fixed",
             "label": "Fixed",
-            "icon": "fa-solid fa-wrench",
+            "icon": "fa-solid fa-wrench text-success",
             "nullable": false,
             "type": "boolean"
         },
@@ -1505,7 +1613,7 @@
         },
         {
             "column": "sms",
-            "label": "Sms",
+            "label": "SMS",
             "icon": "fa-solid fa-comment-sms",
             "nullable": false,
             "type": "boolean"
@@ -1593,6 +1701,13 @@
             "icon": "",
             "nullable": false,
             "type": "mediumText"
+        },
+        {
+            "column": "email",
+            "label": "Email",
+            "icon": "",
+            "nullable": false,
+            "type": "string"
         },
         {
             "column": "phone",
@@ -1704,7 +1819,7 @@
             },
             "created_by_id": {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1719,7 +1834,7 @@
             },
             "modified_by_id": {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1734,7 +1849,7 @@
             },
             "owned_by_id": {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1766,6 +1881,66 @@
                 "foreign": {
                     "references": "id",
                     "on": "matrix_matrices"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "contact_id": {
+                "column": "contact_id",
+                "label": "Contact id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "crm_contacts"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "location_id": {
+                "column": "location_id",
+                "label": "Location id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "crm_locations"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "organization_id": {
+                "column": "organization_id",
+                "label": "Organization id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "crm_organizations"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "people_id": {
+                "column": "people_id",
+                "label": "People id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "crm_people"
                 },
                 "icon": "",
                 "index": true,
@@ -1878,7 +2053,7 @@
                 "description": "",
                 "icon": "",
                 "html": false,
-                "index": false,
+                "index": true,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -2010,9 +2185,9 @@
                 "column": "featured",
                 "label": "Featured",
                 "description": "",
-                "icon": "fa-solid fa-star",
+                "icon": "fa-solid fa-star text-primary",
                 "default": false,
-                "index": false,
+                "index": true,
                 "nullable": false,
                 "readOnly": false,
                 "type": "boolean"
@@ -2021,7 +2196,7 @@
                 "column": "fixed",
                 "label": "Fixed",
                 "description": "",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "default": false,
                 "index": false,
                 "nullable": false,
@@ -2151,7 +2326,7 @@
             },
             "sms": {
                 "column": "sms",
-                "label": "Sms",
+                "label": "SMS",
                 "description": "",
                 "icon": "fa-solid fa-comment-sms",
                 "default": false,
@@ -2309,6 +2484,17 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "mediumText"
+            },
+            "email": {
+                "column": "email",
+                "label": "Email",
+                "description": "",
+                "icon": "",
+                "html": false,
+                "index": false,
+                "nullable": true,
+                "readOnly": false,
+                "type": "string"
             },
             "phone": {
                 "column": "phone",
@@ -2476,7 +2662,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "x": {
                 "column": "x",
@@ -2666,7 +2852,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         },
         "json": {
@@ -2692,7 +2878,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "contact": {
                 "column": "contact",
@@ -2716,7 +2902,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "notes": {
                 "column": "notes",
@@ -2741,7 +2927,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "sources": {
                 "column": "sources",
@@ -2753,13 +2939,14 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         }
     },
     "uses": [
         "Database/Factories/Playground/Crm/Models/ClientFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"
     ]

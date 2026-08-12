@@ -5,6 +5,8 @@
     "fqdn": "Tests/Unit/Playground/Crm/Models/Organization/ModelTest",
     "model": "Organization",
     "model_fqdn": "Playground/Crm/Models/Organization",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "CRM",
     "module_slug": "crm",
     "name": "Organization",

@@ -6,7 +6,7 @@
 
 The Playground CRM is a package for [Laravel](https://laravel.com/docs/12.x) applications.
 
-Playground: Provide the CRM models for the Playground Client Relationship Management System.
+Playground: Provides the CRM models for the Playground Client Relationship Management System.
 
 Read more on using [Playground: CRM at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/built-components/crm.html)
 
@@ -26,7 +26,7 @@ composer require gammamatrix/playground-crm
 
 Playground CRM provides information in the `artisan about` command.
 
-[//]: # (<img src="resources/docs/artisan-about-playground-crm.png" alt="screenshot of artisan about command with Playground: CRM.">)
+<img src="resources/docs/artisan-about-playground-crm.png" alt="screenshot of artisan about command with Playground: CRM.">
 
 ## Configuration
 
@@ -41,8 +41,8 @@ php artisan vendor:publish --provider="Playground\Crm\ServiceProvider" --tag="pl
 
 ### Environment Variables
 
-| env()                            | config()                         | Default |
-|----------------------------------|----------------------------------|---------|
+| env()                                | config()                         | Default |
+|--------------------------------------|----------------------------------|---------|
 | `PLAYGROUND_CRM_ABOUT`           | `playground-crm.about`           | `true`  |
 | `PLAYGROUND_CRM_LOAD_MIGRATIONS` | `playground-crm.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -75,23 +75,24 @@ composer cloc
 ```
 
 ```
-➜  playground-crm git:(develop) composer cloc
-      91 text files.
-      86 unique files.
-      12 files ignored.
+➜  playground-crm git:(develop) ✗ composer cloc
+> cloc --exclude-dir=node_modules,output,vendor .
+       0 text files.
+       0 unique files.
+       0 files ignored.
 
-github.com/AlDanial/cloc v 2.08  T=0.04 s (2043.8 files/s, 464650.1 lines/s)
+github.com/AlDanial/cloc v 1.98  T=0.0 s (0.0 files/s, 0.0 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            34              0              0          14519
-PHP                             33            370            854           2498
-XML                             14              0              7            843
-YAML                             1              5              0            275
-Markdown                         3             46              1            119
-INI                              1              3              0             12
+JSON                             0              0              0              0
+PHP                              0              0              0              0
+YAML                             0              0              0              0
+XML                              0              0              0              0
+Markdown                         0              0              0              0
+INI                              0              0              0              0
 -------------------------------------------------------------------------------
-SUM:                            86            424            862          18266
+SUM:                             0              0              0              0
 -------------------------------------------------------------------------------
 ```
 

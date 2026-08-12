@@ -5,6 +5,8 @@
     "fqdn": "Tests/Feature/Playground/Crm/Models/People/ModelTest",
     "model": "People",
     "model_fqdn": "Playground/Crm/Models/People",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "CRM",
     "module_slug": "crm",
     "name": "People",

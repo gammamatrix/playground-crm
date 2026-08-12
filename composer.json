@@ -1,6 +1,6 @@
 {
     "name": "gammamatrix/playground-crm",
-    "description": "Playground: Provide the CRM models for the Playground Client Relationship Management System.",
+    "description": "Playground: Provides the CRM models for the Playground Client Relationship Management System.",
     "keywords": [
         "crm",
         "gammamatrix",

@@ -23,12 +23,12 @@
     "withTranslations": false,
     "playground": true,
     "revision": false,
-    "docs_name": "Playground: CRM Resource at Read the Docs: Playground Documentation",
-    "docs_url": "https://gammamatrix-playground.readthedocs.io/en/develop/built-components/crm.html",
+    "docs_name": "",
+    "docs_url": "",
     "package_name": "Playground: CRM",
     "model_package": "",
     "model_package_name": "",
-    "package_description": "Playground: Provide the CRM models for the Playground Client Relationship Management System.",
+    "package_description": "Playground: Provides the CRM models for the Playground Client Relationship Management System.",
     "package_homepage": "https://github.com/gammamatrix/playground-crm",
     "package_license": "MIT",
     "packagist": "gammamatrix/playground-crm",
@@ -56,6 +56,7 @@
         "Playground/Crm/ServiceProvider"
     ],
     "package_providers": [],
+    "package_repositories": [],
     "package_require": {
         "php": "^8.4",
         "gammamatrix/playground": "*",
@@ -72,11 +73,11 @@
     },
     "controllers": [],
     "models": {
-        "Client": "resources/configurations/playground-crm/model.client.json",
-        "Contact": "resources/configurations/playground-crm/model.contact.json",
-        "Location": "resources/configurations/playground-crm/model.location.json",
-        "Organization": "resources/configurations/playground-crm/model.organization.json",
-        "People": "resources/configurations/playground-crm/model.people.json"
+        "Client": "resources/package/client/model.json",
+        "Contact": "resources/package/contact/model.json",
+        "Location": "resources/package/location/model.json",
+        "Organization": "resources/package/organization/model.json",
+        "People": "resources/package/people/model.json"
     },
     "policies": [],
     "requests": [],

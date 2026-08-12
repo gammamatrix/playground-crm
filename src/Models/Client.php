@@ -10,6 +10,7 @@ namespace Playground\Crm\Models;
 
 use Database\Factories\Playground\Crm\Models\ClientFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
@@ -23,6 +24,10 @@ use Playground\Models\Model;
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
  * @property ?string $matrix_id
+ * @property ?string $contact_id
+ * @property ?string $location_id
+ * @property ?string $organization_id
+ * @property ?string $people_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
@@ -35,8 +40,8 @@ use Playground\Models\Model;
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
- * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
+ * @property ?Carbon $resumed_at
  * @property ?Carbon $suspended_at
  * @property ?Carbon $timer_end_at
  * @property ?Carbon $timer_start_at
@@ -94,6 +99,7 @@ use Playground\Models\Model;
  * @property string $introduction
  * @property ?string $content
  * @property ?string $summary
+ * @property ?string $email
  * @property ?string $phone
  * @property string $icon
  * @property string $image
@@ -121,6 +127,10 @@ class Client extends Model
         'owned_by_id' => null,
         'parent_id' => null,
         'matrix_id' => null,
+        'contact_id' => null,
+        'location_id' => null,
+        'organization_id' => null,
+        'people_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
@@ -133,8 +143,8 @@ class Client extends Model
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
-        'resumed_at' => null,
         'resolved_at' => null,
+        'resumed_at' => null,
         'suspended_at' => null,
         'timer_end_at' => null,
         'timer_start_at' => null,
@@ -149,7 +159,7 @@ class Client extends Model
         'status' => 0,
         'rank' => 0,
         'size' => 0,
-        'matrix' => '{}',
+        'matrix' => null,
         'x' => null,
         'y' => null,
         'z' => null,
@@ -192,18 +202,19 @@ class Client extends Model
         'introduction' => '',
         'content' => null,
         'summary' => null,
+        'email' => null,
         'phone' => null,
         'icon' => '',
         'image' => '',
         'avatar' => '',
-        'ui' => '{}',
+        'ui' => null,
         'address' => '{}',
-        'assets' => '{}',
+        'assets' => null,
         'contact' => '{}',
-        'meta' => '{}',
+        'meta' => null,
         'notes' => '[]',
-        'options' => '{}',
-        'sources' => '{}',
+        'options' => null,
+        'sources' => null,
     ];
 
     protected $fillable = [
@@ -211,6 +222,10 @@ class Client extends Model
         'owned_by_id',
         'parent_id',
         'matrix_id',
+        'contact_id',
+        'location_id',
+        'organization_id',
+        'people_id',
         'canceled_at',
         'closed_at',
         'embargo_at',
@@ -220,8 +235,8 @@ class Client extends Model
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -279,6 +294,7 @@ class Client extends Model
         'introduction',
         'content',
         'summary',
+        'email',
         'phone',
         'icon',
         'image',
@@ -308,8 +324,8 @@ class Client extends Model
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
-            'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
+            'resumed_at' => 'datetime',
             'suspended_at' => 'datetime',
             'timer_end_at' => 'datetime',
             'timer_start_at' => 'datetime',
@@ -367,6 +383,7 @@ class Client extends Model
             'introduction' => 'string',
             'content' => 'string',
             'summary' => 'string',
+            'email' => 'string',
             'phone' => 'string',
             'icon' => 'string',
             'image' => 'string',
@@ -380,5 +397,61 @@ class Client extends Model
             'options' => 'array',
             'sources' => 'array',
         ];
+    }
+
+    /**
+     * The contact of the client.
+     *
+     * @return HasOne<Contact, $this>
+     */
+    public function contact(): HasOne
+    {
+        return $this->hasOne(
+            Contact::class,
+            'id',
+            'contact_id'
+        );
+    }
+
+    /**
+     * The location of the client.
+     *
+     * @return HasOne<Location, $this>
+     */
+    public function location(): HasOne
+    {
+        return $this->hasOne(
+            Location::class,
+            'id',
+            'location_id'
+        );
+    }
+
+    /**
+     * The organization of the client.
+     *
+     * @return HasOne<Organization, $this>
+     */
+    public function organization(): HasOne
+    {
+        return $this->hasOne(
+            Organization::class,
+            'id',
+            'organization_id'
+        );
+    }
+
+    /**
+     * The people of the client.
+     *
+     * @return HasOne<People, $this>
+     */
+    public function people(): HasOne
+    {
+        return $this->hasOne(
+            People::class,
+            'id',
+            'people_id'
+        );
     }
 }

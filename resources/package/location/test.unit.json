@@ -5,6 +5,8 @@
     "fqdn": "Tests/Unit/Playground/Crm/Models/Location/ModelTest",
     "model": "Location",
     "model_fqdn": "Playground/Crm/Models/Location",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "CRM",
     "module_slug": "crm",
     "name": "Location",

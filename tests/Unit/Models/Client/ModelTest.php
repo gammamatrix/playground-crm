@@ -25,5 +25,9 @@ class ModelTest extends ModelCase
         'modifier',
         'owner',
         'parent',
+        'contact',
+        'location',
+        'organization',
+        'people',
     ];
 }
