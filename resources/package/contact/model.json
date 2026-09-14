@@ -82,9 +82,9 @@
             "foreignKey": "contact_id",
             "localKey": "id"
         },
-        "people": {
+        "peoples": {
             "comment": "The people of the contact.",
-            "accessor": "people",
+            "accessor": "peoples",
             "related": "People",
             "foreignKey": "contact_id",
             "localKey": "id"

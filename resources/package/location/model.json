@@ -82,9 +82,9 @@
             "foreignKey": "location_id",
             "localKey": "id"
         },
-        "people": {
+        "peoples": {
             "comment": "The people of the location.",
-            "accessor": "people",
+            "accessor": "peoples",
             "related": "People",
             "foreignKey": "location_id",
             "localKey": "id"

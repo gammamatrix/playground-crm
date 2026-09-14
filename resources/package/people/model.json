@@ -88,13 +88,6 @@
             "related": "Organization",
             "foreignKey": "people_id",
             "localKey": "id"
-        },
-        "people": {
-            "comment": "The people of the people.",
-            "accessor": "people",
-            "related": "People",
-            "foreignKey": "people_id",
-            "localKey": "id"
         }
     },
     "HasManyThrough": [],
