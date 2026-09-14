@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="1" branch-rate="0" lines-covered="568" lines-valid="568" branches-covered="0" branches-valid="0" complexity="39" version="0.4" timestamp="1786550236">
+<coverage line-rate="1" branch-rate="0" lines-covered="668" lines-valid="668" branches-covered="0" branches-valid="0" complexity="59" version="0.4" timestamp="1789410986">
   <sources>
     <source>/app/src</source>
   </sources>
   <packages>
-    <package name="Models/Client.php" line-rate="1" branch-rate="0" complexity="5">
+    <package name="Models/Client.php" line-rate="1" branch-rate="0" complexity="9">
       <classes>
-        <class name="Playground\Crm\Models\Client" filename="Models/Client.php" line-rate="1" branch-rate="0" complexity="5">
+        <class name="Playground\Crm\Models\Client" filename="Models/Client.php" line-rate="1" branch-rate="0" complexity="9">
           <methods>
             <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="313" hits="14"/>
                 <line number="314" hits="14"/>
                 <line number="315" hits="14"/>
                 <line number="316" hits="14"/>
@@ -98,47 +97,83 @@
                 <line number="397" hits="14"/>
                 <line number="398" hits="14"/>
                 <line number="399" hits="14"/>
+                <line number="400" hits="14"/>
               </lines>
             </method>
             <method name="contact" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="409" hits="2"/>
                 <line number="410" hits="2"/>
                 <line number="411" hits="2"/>
                 <line number="412" hits="2"/>
                 <line number="413" hits="2"/>
+                <line number="414" hits="2"/>
               </lines>
             </method>
             <method name="location" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="423" hits="2"/>
                 <line number="424" hits="2"/>
                 <line number="425" hits="2"/>
                 <line number="426" hits="2"/>
                 <line number="427" hits="2"/>
+                <line number="428" hits="2"/>
               </lines>
             </method>
             <method name="organization" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="437" hits="2"/>
                 <line number="438" hits="2"/>
                 <line number="439" hits="2"/>
                 <line number="440" hits="2"/>
                 <line number="441" hits="2"/>
+                <line number="442" hits="2"/>
               </lines>
             </method>
             <method name="people" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="451" hits="2"/>
                 <line number="452" hits="2"/>
                 <line number="453" hits="2"/>
                 <line number="454" hits="2"/>
                 <line number="455" hits="2"/>
+                <line number="456" hits="2"/>
+              </lines>
+            </method>
+            <method name="contacts" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="466" hits="2"/>
+                <line number="467" hits="2"/>
+                <line number="468" hits="2"/>
+                <line number="469" hits="2"/>
+                <line number="470" hits="2"/>
+              </lines>
+            </method>
+            <method name="locations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="480" hits="2"/>
+                <line number="481" hits="2"/>
+                <line number="482" hits="2"/>
+                <line number="483" hits="2"/>
+                <line number="484" hits="2"/>
+              </lines>
+            </method>
+            <method name="organizations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="494" hits="2"/>
+                <line number="495" hits="2"/>
+                <line number="496" hits="2"/>
+                <line number="497" hits="2"/>
+                <line number="498" hits="2"/>
+              </lines>
+            </method>
+            <method name="peoples" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="508" hits="2"/>
+                <line number="509" hits="2"/>
+                <line number="510" hits="2"/>
+                <line number="511" hits="2"/>
+                <line number="512" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="313" hits="14"/>
             <line number="314" hits="14"/>
             <line number="315" hits="14"/>
             <line number="316" hits="14"/>
@@ -225,37 +260,57 @@
             <line number="397" hits="14"/>
             <line number="398" hits="14"/>
             <line number="399" hits="14"/>
-            <line number="409" hits="2"/>
+            <line number="400" hits="14"/>
             <line number="410" hits="2"/>
             <line number="411" hits="2"/>
             <line number="412" hits="2"/>
             <line number="413" hits="2"/>
-            <line number="423" hits="2"/>
+            <line number="414" hits="2"/>
             <line number="424" hits="2"/>
             <line number="425" hits="2"/>
             <line number="426" hits="2"/>
             <line number="427" hits="2"/>
-            <line number="437" hits="2"/>
+            <line number="428" hits="2"/>
             <line number="438" hits="2"/>
             <line number="439" hits="2"/>
             <line number="440" hits="2"/>
             <line number="441" hits="2"/>
-            <line number="451" hits="2"/>
+            <line number="442" hits="2"/>
             <line number="452" hits="2"/>
             <line number="453" hits="2"/>
             <line number="454" hits="2"/>
             <line number="455" hits="2"/>
+            <line number="456" hits="2"/>
+            <line number="466" hits="2"/>
+            <line number="467" hits="2"/>
+            <line number="468" hits="2"/>
+            <line number="469" hits="2"/>
+            <line number="470" hits="2"/>
+            <line number="480" hits="2"/>
+            <line number="481" hits="2"/>
+            <line number="482" hits="2"/>
+            <line number="483" hits="2"/>
+            <line number="484" hits="2"/>
+            <line number="494" hits="2"/>
+            <line number="495" hits="2"/>
+            <line number="496" hits="2"/>
+            <line number="497" hits="2"/>
+            <line number="498" hits="2"/>
+            <line number="508" hits="2"/>
+            <line number="509" hits="2"/>
+            <line number="510" hits="2"/>
+            <line number="511" hits="2"/>
+            <line number="512" hits="2"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="Models/Contact.php" line-rate="1" branch-rate="0" complexity="5">
+    <package name="Models/Contact.php" line-rate="1" branch-rate="0" complexity="9">
       <classes>
-        <class name="Playground\Crm\Models\Contact" filename="Models/Contact.php" line-rate="1" branch-rate="0" complexity="5">
+        <class name="Playground\Crm\Models\Contact" filename="Models/Contact.php" line-rate="1" branch-rate="0" complexity="9">
           <methods>
             <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="313" hits="14"/>
                 <line number="314" hits="14"/>
                 <line number="315" hits="14"/>
                 <line number="316" hits="14"/>
@@ -342,47 +397,83 @@
                 <line number="397" hits="14"/>
                 <line number="398" hits="14"/>
                 <line number="399" hits="14"/>
+                <line number="400" hits="14"/>
               </lines>
             </method>
             <method name="client" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="409" hits="2"/>
                 <line number="410" hits="2"/>
                 <line number="411" hits="2"/>
                 <line number="412" hits="2"/>
                 <line number="413" hits="2"/>
+                <line number="414" hits="2"/>
               </lines>
             </method>
             <method name="location" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="423" hits="2"/>
                 <line number="424" hits="2"/>
                 <line number="425" hits="2"/>
                 <line number="426" hits="2"/>
                 <line number="427" hits="2"/>
+                <line number="428" hits="2"/>
               </lines>
             </method>
             <method name="organization" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="437" hits="2"/>
                 <line number="438" hits="2"/>
                 <line number="439" hits="2"/>
                 <line number="440" hits="2"/>
                 <line number="441" hits="2"/>
+                <line number="442" hits="2"/>
               </lines>
             </method>
             <method name="people" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="451" hits="2"/>
                 <line number="452" hits="2"/>
                 <line number="453" hits="2"/>
                 <line number="454" hits="2"/>
                 <line number="455" hits="2"/>
+                <line number="456" hits="2"/>
+              </lines>
+            </method>
+            <method name="clients" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="466" hits="2"/>
+                <line number="467" hits="2"/>
+                <line number="468" hits="2"/>
+                <line number="469" hits="2"/>
+                <line number="470" hits="2"/>
+              </lines>
+            </method>
+            <method name="locations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="480" hits="2"/>
+                <line number="481" hits="2"/>
+                <line number="482" hits="2"/>
+                <line number="483" hits="2"/>
+                <line number="484" hits="2"/>
+              </lines>
+            </method>
+            <method name="organizations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="494" hits="2"/>
+                <line number="495" hits="2"/>
+                <line number="496" hits="2"/>
+                <line number="497" hits="2"/>
+                <line number="498" hits="2"/>
+              </lines>
+            </method>
+            <method name="peoples" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="508" hits="2"/>
+                <line number="509" hits="2"/>
+                <line number="510" hits="2"/>
+                <line number="511" hits="2"/>
+                <line number="512" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="313" hits="14"/>
             <line number="314" hits="14"/>
             <line number="315" hits="14"/>
             <line number="316" hits="14"/>
@@ -469,37 +560,57 @@
             <line number="397" hits="14"/>
             <line number="398" hits="14"/>
             <line number="399" hits="14"/>
-            <line number="409" hits="2"/>
+            <line number="400" hits="14"/>
             <line number="410" hits="2"/>
             <line number="411" hits="2"/>
             <line number="412" hits="2"/>
             <line number="413" hits="2"/>
-            <line number="423" hits="2"/>
+            <line number="414" hits="2"/>
             <line number="424" hits="2"/>
             <line number="425" hits="2"/>
             <line number="426" hits="2"/>
             <line number="427" hits="2"/>
-            <line number="437" hits="2"/>
+            <line number="428" hits="2"/>
             <line number="438" hits="2"/>
             <line number="439" hits="2"/>
             <line number="440" hits="2"/>
             <line number="441" hits="2"/>
-            <line number="451" hits="2"/>
+            <line number="442" hits="2"/>
             <line number="452" hits="2"/>
             <line number="453" hits="2"/>
             <line number="454" hits="2"/>
             <line number="455" hits="2"/>
+            <line number="456" hits="2"/>
+            <line number="466" hits="2"/>
+            <line number="467" hits="2"/>
+            <line number="468" hits="2"/>
+            <line number="469" hits="2"/>
+            <line number="470" hits="2"/>
+            <line number="480" hits="2"/>
+            <line number="481" hits="2"/>
+            <line number="482" hits="2"/>
+            <line number="483" hits="2"/>
+            <line number="484" hits="2"/>
+            <line number="494" hits="2"/>
+            <line number="495" hits="2"/>
+            <line number="496" hits="2"/>
+            <line number="497" hits="2"/>
+            <line number="498" hits="2"/>
+            <line number="508" hits="2"/>
+            <line number="509" hits="2"/>
+            <line number="510" hits="2"/>
+            <line number="511" hits="2"/>
+            <line number="512" hits="2"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="Models/Location.php" line-rate="1" branch-rate="0" complexity="5">
+    <package name="Models/Location.php" line-rate="1" branch-rate="0" complexity="9">
       <classes>
-        <class name="Playground\Crm\Models\Location" filename="Models/Location.php" line-rate="1" branch-rate="0" complexity="5">
+        <class name="Playground\Crm\Models\Location" filename="Models/Location.php" line-rate="1" branch-rate="0" complexity="9">
           <methods>
             <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="313" hits="14"/>
                 <line number="314" hits="14"/>
                 <line number="315" hits="14"/>
                 <line number="316" hits="14"/>
@@ -586,47 +697,83 @@
                 <line number="397" hits="14"/>
                 <line number="398" hits="14"/>
                 <line number="399" hits="14"/>
+                <line number="400" hits="14"/>
               </lines>
             </method>
             <method name="client" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="409" hits="2"/>
                 <line number="410" hits="2"/>
                 <line number="411" hits="2"/>
                 <line number="412" hits="2"/>
                 <line number="413" hits="2"/>
+                <line number="414" hits="2"/>
               </lines>
             </method>
             <method name="contact" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="423" hits="2"/>
                 <line number="424" hits="2"/>
                 <line number="425" hits="2"/>
                 <line number="426" hits="2"/>
                 <line number="427" hits="2"/>
+                <line number="428" hits="2"/>
               </lines>
             </method>
             <method name="organization" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="437" hits="2"/>
                 <line number="438" hits="2"/>
                 <line number="439" hits="2"/>
                 <line number="440" hits="2"/>
                 <line number="441" hits="2"/>
+                <line number="442" hits="2"/>
               </lines>
             </method>
             <method name="people" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="451" hits="2"/>
                 <line number="452" hits="2"/>
                 <line number="453" hits="2"/>
                 <line number="454" hits="2"/>
                 <line number="455" hits="2"/>
+                <line number="456" hits="2"/>
+              </lines>
+            </method>
+            <method name="clients" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="466" hits="2"/>
+                <line number="467" hits="2"/>
+                <line number="468" hits="2"/>
+                <line number="469" hits="2"/>
+                <line number="470" hits="2"/>
+              </lines>
+            </method>
+            <method name="contacts" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="480" hits="2"/>
+                <line number="481" hits="2"/>
+                <line number="482" hits="2"/>
+                <line number="483" hits="2"/>
+                <line number="484" hits="2"/>
+              </lines>
+            </method>
+            <method name="organizations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="494" hits="2"/>
+                <line number="495" hits="2"/>
+                <line number="496" hits="2"/>
+                <line number="497" hits="2"/>
+                <line number="498" hits="2"/>
+              </lines>
+            </method>
+            <method name="peoples" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="508" hits="2"/>
+                <line number="509" hits="2"/>
+                <line number="510" hits="2"/>
+                <line number="511" hits="2"/>
+                <line number="512" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="313" hits="14"/>
             <line number="314" hits="14"/>
             <line number="315" hits="14"/>
             <line number="316" hits="14"/>
@@ -713,37 +860,57 @@
             <line number="397" hits="14"/>
             <line number="398" hits="14"/>
             <line number="399" hits="14"/>
-            <line number="409" hits="2"/>
+            <line number="400" hits="14"/>
             <line number="410" hits="2"/>
             <line number="411" hits="2"/>
             <line number="412" hits="2"/>
             <line number="413" hits="2"/>
-            <line number="423" hits="2"/>
+            <line number="414" hits="2"/>
             <line number="424" hits="2"/>
             <line number="425" hits="2"/>
             <line number="426" hits="2"/>
             <line number="427" hits="2"/>
-            <line number="437" hits="2"/>
+            <line number="428" hits="2"/>
             <line number="438" hits="2"/>
             <line number="439" hits="2"/>
             <line number="440" hits="2"/>
             <line number="441" hits="2"/>
-            <line number="451" hits="2"/>
+            <line number="442" hits="2"/>
             <line number="452" hits="2"/>
             <line number="453" hits="2"/>
             <line number="454" hits="2"/>
             <line number="455" hits="2"/>
+            <line number="456" hits="2"/>
+            <line number="466" hits="2"/>
+            <line number="467" hits="2"/>
+            <line number="468" hits="2"/>
+            <line number="469" hits="2"/>
+            <line number="470" hits="2"/>
+            <line number="480" hits="2"/>
+            <line number="481" hits="2"/>
+            <line number="482" hits="2"/>
+            <line number="483" hits="2"/>
+            <line number="484" hits="2"/>
+            <line number="494" hits="2"/>
+            <line number="495" hits="2"/>
+            <line number="496" hits="2"/>
+            <line number="497" hits="2"/>
+            <line number="498" hits="2"/>
+            <line number="508" hits="2"/>
+            <line number="509" hits="2"/>
+            <line number="510" hits="2"/>
+            <line number="511" hits="2"/>
+            <line number="512" hits="2"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="Models/Organization.php" line-rate="1" branch-rate="0" complexity="5">
+    <package name="Models/Organization.php" line-rate="1" branch-rate="0" complexity="9">
       <classes>
-        <class name="Playground\Crm\Models\Organization" filename="Models/Organization.php" line-rate="1" branch-rate="0" complexity="5">
+        <class name="Playground\Crm\Models\Organization" filename="Models/Organization.php" line-rate="1" branch-rate="0" complexity="9">
           <methods>
             <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="313" hits="14"/>
                 <line number="314" hits="14"/>
                 <line number="315" hits="14"/>
                 <line number="316" hits="14"/>
@@ -830,47 +997,83 @@
                 <line number="397" hits="14"/>
                 <line number="398" hits="14"/>
                 <line number="399" hits="14"/>
+                <line number="400" hits="14"/>
               </lines>
             </method>
             <method name="client" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="409" hits="2"/>
                 <line number="410" hits="2"/>
                 <line number="411" hits="2"/>
                 <line number="412" hits="2"/>
                 <line number="413" hits="2"/>
+                <line number="414" hits="2"/>
               </lines>
             </method>
             <method name="contact" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="423" hits="2"/>
                 <line number="424" hits="2"/>
                 <line number="425" hits="2"/>
                 <line number="426" hits="2"/>
                 <line number="427" hits="2"/>
+                <line number="428" hits="2"/>
               </lines>
             </method>
             <method name="location" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="437" hits="2"/>
                 <line number="438" hits="2"/>
                 <line number="439" hits="2"/>
                 <line number="440" hits="2"/>
                 <line number="441" hits="2"/>
+                <line number="442" hits="2"/>
               </lines>
             </method>
             <method name="people" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="451" hits="2"/>
                 <line number="452" hits="2"/>
                 <line number="453" hits="2"/>
                 <line number="454" hits="2"/>
                 <line number="455" hits="2"/>
+                <line number="456" hits="2"/>
+              </lines>
+            </method>
+            <method name="clients" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="466" hits="2"/>
+                <line number="467" hits="2"/>
+                <line number="468" hits="2"/>
+                <line number="469" hits="2"/>
+                <line number="470" hits="2"/>
+              </lines>
+            </method>
+            <method name="contacts" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="480" hits="2"/>
+                <line number="481" hits="2"/>
+                <line number="482" hits="2"/>
+                <line number="483" hits="2"/>
+                <line number="484" hits="2"/>
+              </lines>
+            </method>
+            <method name="locations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="494" hits="2"/>
+                <line number="495" hits="2"/>
+                <line number="496" hits="2"/>
+                <line number="497" hits="2"/>
+                <line number="498" hits="2"/>
+              </lines>
+            </method>
+            <method name="peoples" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="508" hits="2"/>
+                <line number="509" hits="2"/>
+                <line number="510" hits="2"/>
+                <line number="511" hits="2"/>
+                <line number="512" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="313" hits="14"/>
             <line number="314" hits="14"/>
             <line number="315" hits="14"/>
             <line number="316" hits="14"/>
@@ -957,37 +1160,57 @@
             <line number="397" hits="14"/>
             <line number="398" hits="14"/>
             <line number="399" hits="14"/>
-            <line number="409" hits="2"/>
+            <line number="400" hits="14"/>
             <line number="410" hits="2"/>
             <line number="411" hits="2"/>
             <line number="412" hits="2"/>
             <line number="413" hits="2"/>
-            <line number="423" hits="2"/>
+            <line number="414" hits="2"/>
             <line number="424" hits="2"/>
             <line number="425" hits="2"/>
             <line number="426" hits="2"/>
             <line number="427" hits="2"/>
-            <line number="437" hits="2"/>
+            <line number="428" hits="2"/>
             <line number="438" hits="2"/>
             <line number="439" hits="2"/>
             <line number="440" hits="2"/>
             <line number="441" hits="2"/>
-            <line number="451" hits="2"/>
+            <line number="442" hits="2"/>
             <line number="452" hits="2"/>
             <line number="453" hits="2"/>
             <line number="454" hits="2"/>
             <line number="455" hits="2"/>
+            <line number="456" hits="2"/>
+            <line number="466" hits="2"/>
+            <line number="467" hits="2"/>
+            <line number="468" hits="2"/>
+            <line number="469" hits="2"/>
+            <line number="470" hits="2"/>
+            <line number="480" hits="2"/>
+            <line number="481" hits="2"/>
+            <line number="482" hits="2"/>
+            <line number="483" hits="2"/>
+            <line number="484" hits="2"/>
+            <line number="494" hits="2"/>
+            <line number="495" hits="2"/>
+            <line number="496" hits="2"/>
+            <line number="497" hits="2"/>
+            <line number="498" hits="2"/>
+            <line number="508" hits="2"/>
+            <line number="509" hits="2"/>
+            <line number="510" hits="2"/>
+            <line number="511" hits="2"/>
+            <line number="512" hits="2"/>
           </lines>
         </class>
       </classes>
     </package>
-    <package name="Models/People.php" line-rate="1" branch-rate="0" complexity="5">
+    <package name="Models/People.php" line-rate="1" branch-rate="0" complexity="9">
       <classes>
-        <class name="Playground\Crm\Models\People" filename="Models/People.php" line-rate="1" branch-rate="0" complexity="5">
+        <class name="Playground\Crm\Models\People" filename="Models/People.php" line-rate="1" branch-rate="0" complexity="9">
           <methods>
             <method name="casts" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="313" hits="14"/>
                 <line number="314" hits="14"/>
                 <line number="315" hits="14"/>
                 <line number="316" hits="14"/>
@@ -1074,47 +1297,83 @@
                 <line number="397" hits="14"/>
                 <line number="398" hits="14"/>
                 <line number="399" hits="14"/>
+                <line number="400" hits="14"/>
               </lines>
             </method>
             <method name="client" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="409" hits="2"/>
                 <line number="410" hits="2"/>
                 <line number="411" hits="2"/>
                 <line number="412" hits="2"/>
                 <line number="413" hits="2"/>
+                <line number="414" hits="2"/>
               </lines>
             </method>
             <method name="contact" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="423" hits="2"/>
                 <line number="424" hits="2"/>
                 <line number="425" hits="2"/>
                 <line number="426" hits="2"/>
                 <line number="427" hits="2"/>
+                <line number="428" hits="2"/>
               </lines>
             </method>
             <method name="location" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="437" hits="2"/>
                 <line number="438" hits="2"/>
                 <line number="439" hits="2"/>
                 <line number="440" hits="2"/>
                 <line number="441" hits="2"/>
+                <line number="442" hits="2"/>
               </lines>
             </method>
             <method name="organization" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="451" hits="2"/>
                 <line number="452" hits="2"/>
                 <line number="453" hits="2"/>
                 <line number="454" hits="2"/>
                 <line number="455" hits="2"/>
+                <line number="456" hits="2"/>
+              </lines>
+            </method>
+            <method name="clients" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="466" hits="2"/>
+                <line number="467" hits="2"/>
+                <line number="468" hits="2"/>
+                <line number="469" hits="2"/>
+                <line number="470" hits="2"/>
+              </lines>
+            </method>
+            <method name="contacts" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="480" hits="2"/>
+                <line number="481" hits="2"/>
+                <line number="482" hits="2"/>
+                <line number="483" hits="2"/>
+                <line number="484" hits="2"/>
+              </lines>
+            </method>
+            <method name="locations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="494" hits="2"/>
+                <line number="495" hits="2"/>
+                <line number="496" hits="2"/>
+                <line number="497" hits="2"/>
+                <line number="498" hits="2"/>
+              </lines>
+            </method>
+            <method name="organizations" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="508" hits="2"/>
+                <line number="509" hits="2"/>
+                <line number="510" hits="2"/>
+                <line number="511" hits="2"/>
+                <line number="512" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="313" hits="14"/>
             <line number="314" hits="14"/>
             <line number="315" hits="14"/>
             <line number="316" hits="14"/>
@@ -1201,26 +1460,47 @@
             <line number="397" hits="14"/>
             <line number="398" hits="14"/>
             <line number="399" hits="14"/>
-            <line number="409" hits="2"/>
+            <line number="400" hits="14"/>
             <line number="410" hits="2"/>
             <line number="411" hits="2"/>
             <line number="412" hits="2"/>
             <line number="413" hits="2"/>
-            <line number="423" hits="2"/>
+            <line number="414" hits="2"/>
             <line number="424" hits="2"/>
             <line number="425" hits="2"/>
             <line number="426" hits="2"/>
             <line number="427" hits="2"/>
-            <line number="437" hits="2"/>
+            <line number="428" hits="2"/>
             <line number="438" hits="2"/>
             <line number="439" hits="2"/>
             <line number="440" hits="2"/>
             <line number="441" hits="2"/>
-            <line number="451" hits="2"/>
+            <line number="442" hits="2"/>
             <line number="452" hits="2"/>
             <line number="453" hits="2"/>
             <line number="454" hits="2"/>
             <line number="455" hits="2"/>
+            <line number="456" hits="2"/>
+            <line number="466" hits="2"/>
+            <line number="467" hits="2"/>
+            <line number="468" hits="2"/>
+            <line number="469" hits="2"/>
+            <line number="470" hits="2"/>
+            <line number="480" hits="2"/>
+            <line number="481" hits="2"/>
+            <line number="482" hits="2"/>
+            <line number="483" hits="2"/>
+            <line number="484" hits="2"/>
+            <line number="494" hits="2"/>
+            <line number="495" hits="2"/>
+            <line number="496" hits="2"/>
+            <line number="497" hits="2"/>
+            <line number="498" hits="2"/>
+            <line number="508" hits="2"/>
+            <line number="509" hits="2"/>
+            <line number="510" hits="2"/>
+            <line number="511" hits="2"/>
+            <line number="512" hits="2"/>
           </lines>
         </class>
       </classes>
