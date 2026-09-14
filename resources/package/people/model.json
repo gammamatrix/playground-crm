@@ -60,7 +60,44 @@
             "localKey": "organization_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "clients": {
+            "comment": "The clients of the people.",
+            "accessor": "clients",
+            "related": "Client",
+            "foreignKey": "people_id",
+            "localKey": "id"
+        },
+        "contacts": {
+            "comment": "The contacts of the people.",
+            "accessor": "contacts",
+            "related": "Contact",
+            "foreignKey": "people_id",
+            "localKey": "id"
+        },
+        "locations": {
+            "comment": "The locations of the people.",
+            "accessor": "locations",
+            "related": "Location",
+            "foreignKey": "people_id",
+            "localKey": "id"
+        },
+        "organizations": {
+            "comment": "The organizations of the people.",
+            "accessor": "organizations",
+            "related": "Organization",
+            "foreignKey": "people_id",
+            "localKey": "id"
+        },
+        "people": {
+            "comment": "The people of the people.",
+            "accessor": "people",
+            "related": "People",
+            "foreignKey": "people_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": [],
     "scopes": {
         "sort": {
             "include": "minus",
@@ -155,9 +192,9 @@
         "image": "",
         "avatar": "",
         "ui": null,
-        "address": "{}",
+        "address": null,
         "assets": null,
-        "contact": "{}",
+        "contact": null,
         "meta": null,
         "notes": "[]",
         "options": null,
@@ -2866,7 +2903,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "assets": {
                 "column": "assets",
@@ -2890,7 +2927,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "meta": {
                 "column": "meta",
@@ -2946,6 +2983,7 @@
     "uses": [
         "Database/Factories/Playground/Crm/Models/PeopleFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

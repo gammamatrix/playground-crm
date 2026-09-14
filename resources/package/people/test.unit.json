@@ -15,7 +15,7 @@
     "package": "playground-crm",
     "playground": true,
     "suite": "unit",
-    "type": "model",
+    "type": "playground-model",
     "uses": [
         "Tests/Unit/Playground/Crm/Models/ModelCase"
     ],

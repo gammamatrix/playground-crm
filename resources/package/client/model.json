@@ -60,7 +60,37 @@
             "localKey": "people_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "contacts": {
+            "comment": "The contacts of the client.",
+            "accessor": "contacts",
+            "related": "Contact",
+            "foreignKey": "client_id",
+            "localKey": "id"
+        },
+        "locations": {
+            "comment": "The locations of the client.",
+            "accessor": "locations",
+            "related": "Location",
+            "foreignKey": "client_id",
+            "localKey": "id"
+        },
+        "organizations": {
+            "comment": "The organizations of the client.",
+            "accessor": "organizations",
+            "related": "Organization",
+            "foreignKey": "client_id",
+            "localKey": "id"
+        },
+        "people": {
+            "comment": "The people of the client.",
+            "accessor": "people",
+            "related": "People",
+            "foreignKey": "client_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": [],
     "scopes": {
         "sort": {
             "include": "minus",
@@ -155,9 +185,9 @@
         "image": "",
         "avatar": "",
         "ui": null,
-        "address": "{}",
+        "address": null,
         "assets": null,
-        "contact": "{}",
+        "contact": null,
         "meta": null,
         "notes": "[]",
         "options": null,
@@ -2866,7 +2896,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "assets": {
                 "column": "assets",
@@ -2890,7 +2920,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "meta": {
                 "column": "meta",
@@ -2946,6 +2976,7 @@
     "uses": [
         "Database/Factories/Playground/Crm/Models/ClientFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

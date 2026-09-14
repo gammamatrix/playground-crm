@@ -20,6 +20,13 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    protected array $hasMany = [
+        'clients',
+        'contacts',
+        'organizations',
+        'peoples',
+    ];
+
     protected array $hasOne = [
         'creator',
         'modifier',

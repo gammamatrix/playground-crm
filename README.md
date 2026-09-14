@@ -76,23 +76,22 @@ composer cloc
 
 ```
 ➜  playground-crm git:(develop) ✗ composer cloc
-> cloc --exclude-dir=node_modules,output,vendor .
-       0 text files.
-       0 unique files.
-       0 files ignored.
+      89 text files.
+      84 unique files.                              
+      23 files ignored.
 
-github.com/AlDanial/cloc v 1.98  T=0.0 s (0.0 files/s, 0.0 lines/s)
+github.com/AlDanial/cloc v 2.08  T=0.05 s (1699.3 files/s, 436709.0 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                             0              0              0              0
-PHP                              0              0              0              0
-YAML                             0              0              0              0
-XML                              0              0              0              0
-Markdown                         0              0              0              0
-INI                              0              0              0              0
+JSON                            34              0              0          15651
+PHP                             33            420           1079           3168
+XML                             12              0              7            889
+YAML                             1              4              0            188
+Markdown                         3             46              0            120
+INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                             0              0              0              0
+SUM:                            84            473           1086          20028
 -------------------------------------------------------------------------------
 ```
 

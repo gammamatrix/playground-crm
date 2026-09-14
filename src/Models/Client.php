@@ -10,6 +10,7 @@ namespace Playground\Crm\Models;
 
 use Database\Factories\Playground\Crm\Models\ClientFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
@@ -208,9 +209,9 @@ class Client extends Model
         'image' => '',
         'avatar' => '',
         'ui' => null,
-        'address' => '{}',
+        'address' => null,
         'assets' => null,
-        'contact' => '{}',
+        'contact' => null,
         'meta' => null,
         'notes' => '[]',
         'options' => null,
@@ -452,6 +453,62 @@ class Client extends Model
             People::class,
             'id',
             'people_id'
+        );
+    }
+
+    /**
+     * The contacts of the client.
+     *
+     * @return HasMany<Contact, $this>
+     */
+    public function contacts(): HasMany
+    {
+        return $this->hasMany(
+            Contact::class,
+            'client_id',
+            'id'
+        );
+    }
+
+    /**
+     * The locations of the client.
+     *
+     * @return HasMany<Location, $this>
+     */
+    public function locations(): HasMany
+    {
+        return $this->hasMany(
+            Location::class,
+            'client_id',
+            'id'
+        );
+    }
+
+    /**
+     * The organizations of the client.
+     *
+     * @return HasMany<Organization, $this>
+     */
+    public function organizations(): HasMany
+    {
+        return $this->hasMany(
+            Organization::class,
+            'client_id',
+            'id'
+        );
+    }
+
+    /**
+     * The people of the client.
+     *
+     * @return HasMany<People, $this>
+     */
+    public function peoples(): HasMany
+    {
+        return $this->hasMany(
+            People::class,
+            'client_id',
+            'id'
         );
     }
 }

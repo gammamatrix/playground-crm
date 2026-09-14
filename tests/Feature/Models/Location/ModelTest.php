@@ -25,6 +25,25 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    protected array $hasMany = [
+        'clients' => [
+            'key' => 'location_id',
+            'modelClass' => Client::class,
+        ],
+        'contacts' => [
+            'key' => 'location_id',
+            'modelClass' => Contact::class,
+        ],
+        'organizations' => [
+            'key' => 'location_id',
+            'modelClass' => Organization::class,
+        ],
+        'peoples' => [
+            'key' => 'location_id',
+            'modelClass' => People::class,
+        ],
+    ];
+
     protected array $hasOne = [
         'creator' => [
             'key' => 'created_by_id',

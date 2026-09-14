@@ -15,9 +15,10 @@
     "package": "playground-crm",
     "playground": true,
     "suite": "feature",
-    "type": "model",
+    "type": "playground-model",
     "uses": [
-        "Tests/Feature/Playground/Crm/Models/ModelCase"
+        "Tests/Feature/Playground/Crm/Models/ModelCase",
+        "Playground/Models/User"
     ],
     "models": [],
     "package_providers": []
