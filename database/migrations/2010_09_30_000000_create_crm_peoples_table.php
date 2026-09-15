@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('crm_people', function (Blueprint $table) {
+        Schema::create('crm_peoples', function (Blueprint $table) {
 
             // Primary key
 
@@ -156,6 +156,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('crm_people');
+        Schema::dropIfExists('crm_peoples');
     }
 };

@@ -119,7 +119,7 @@ class People extends Model
     /** @use HasFactory<PeopleFactory> */
     use HasFactory;
 
-    protected $table = 'crm_people';
+    protected $table = 'crm_peoples';
 
     protected $attributes = [
         'people_type' => null,
