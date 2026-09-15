@@ -18,7 +18,7 @@ Read more on using [Playground: CRM at Read the Docs](https://gammamatrix-playgr
 
 Install this package, with composer, to get access to the CRM Models:
 
-```bash
+```shell
 composer require gammamatrix/playground-crm
 ```
 
@@ -35,7 +35,7 @@ Migrations are disabled by default. This package may sometimes be installed wher
 See the contents of the published config file: [config/playground-crm.php](config/playground-crm.php)
 
 You can publish the config file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Crm\ServiceProvider" --tag="playground-config"
 ```
 
@@ -64,34 +64,34 @@ See the contents of the published config file: [database/migrations](database/mi
 - NOTE: There are 5 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Crm\ServiceProvider" --tag="playground-migrations"
 ```
 
 ## Cloc
 
-```sh
+```shell
 composer cloc
 ```
 
-```
+```terminaloutput
 ➜  playground-crm git:(develop) ✗ composer cloc
       89 text files.
       84 unique files.                              
-      23 files ignored.
+      24 files ignored.
 
-github.com/AlDanial/cloc v 2.08  T=0.05 s (1699.3 files/s, 436709.0 lines/s)
+github.com/AlDanial/cloc v 2.08  T=0.06 s (1434.3 files/s, 368776.4 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            34              0              0          15651
+JSON                            34              0              0          15664
 PHP                             33            420           1079           3168
-XML                             12              0              7            889
+XML                             12              0              7            886
 YAML                             1              4              0            188
 Markdown                         3             46              0            120
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                            84            473           1086          20028
+SUM:                            84            473           1086          20038
 -------------------------------------------------------------------------------
 ```
 
@@ -104,30 +104,30 @@ Tests at level 10 on:
 - `tests/Feature/`
 - `tests/Unit/`
 
-```sh
+```shell
 composer analyse
 ```
 
 ## Coding Standards
 
-```sh
+```shell
 composer format
 ```
 
 ## Testing
 
 Unit tests
-```sh
+```shell
 composer test
 ```
 
 Unit and feature tests
-```sh
+```shell
 composer test-dev
 ```
 
 Run unit and feature tests in parallel:
-```sh
+```shell
 composer test-parallel
 ```
 

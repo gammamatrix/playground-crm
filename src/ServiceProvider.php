@@ -80,7 +80,7 @@ class ServiceProvider extends AuthServiceProvider
             '2010_09_30_000000_create_crm_contacts_table.php',
             '2010_09_30_000000_create_crm_locations_table.php',
             '2010_09_30_000000_create_crm_organizations_table.php',
-            '2010_09_30_000000_create_crm_people_table.php',
+            '2010_09_30_000000_create_crm_peoples_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }
