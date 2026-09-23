@@ -3,6 +3,8 @@
     "config": "playground-crm",
     "fqdn": "Playground/Crm/Models/Client",
     "module": "CRM",
+    "module_label": "CRM",
+    "module_labels": "CRMs",
     "module_slug": "crm",
     "module_slugs": "crms",
     "name": "Client",
