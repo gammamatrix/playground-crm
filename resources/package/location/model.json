@@ -24,6 +24,7 @@
     "model_kebab": "location",
     "model_kebabs": "locations",
     "model_plural": "",
+    "model_route_param": "location",
     "model_singular": "",
     "model_slug": "location",
     "model_slugs": "locations",

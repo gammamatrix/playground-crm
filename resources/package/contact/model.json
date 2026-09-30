@@ -24,6 +24,7 @@
     "model_kebab": "contact",
     "model_kebabs": "contacts",
     "model_plural": "",
+    "model_route_param": "contact",
     "model_singular": "",
     "model_slug": "contact",
     "model_slugs": "contacts",

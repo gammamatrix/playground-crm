@@ -24,6 +24,7 @@
     "model_kebab": "client",
     "model_kebabs": "clients",
     "model_plural": "",
+    "model_route_param": "client",
     "model_singular": "",
     "model_slug": "client",
     "model_slugs": "clients",

@@ -24,6 +24,7 @@
     "model_kebab": "organization",
     "model_kebabs": "organizations",
     "model_plural": "",
+    "model_route_param": "organization",
     "model_singular": "",
     "model_slug": "organization",
     "model_slugs": "organizations",
