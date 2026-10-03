@@ -75,11 +75,11 @@
     },
     "controllers": [],
     "models": {
-        "Client": "resources/package/client/model.json",
-        "Contact": "resources/package/contact/model.json",
-        "Location": "resources/package/location/model.json",
-        "Organization": "resources/package/organization/model.json",
-        "People": "resources/package/people/model.json"
+        "Client": "resources/configurations/playground-crm/client/model.json",
+        "Contact": "resources/configurations/playground-crm/contact/model.json",
+        "Location": "resources/configurations/playground-crm/location/model.json",
+        "Organization": "resources/configurations/playground-crm/organization/model.json",
+        "People": "resources/configurations/playground-crm/people/model.json"
     },
     "policies": [],
     "requests": [],
