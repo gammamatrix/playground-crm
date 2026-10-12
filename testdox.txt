@@ -21,11 +21,6 @@ Model (Tests\Feature\Playground\Crm\Models\Organization\Model)
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Crm\Models\People\Model)
- [x] Model instance
- [x] Verify model relationships
- [x] Factory create
-
 Model (Tests\Unit\Playground\Crm\Models\Client\Model)
  [x] Model instance
  [x] Verify model relationships
@@ -42,11 +37,6 @@ Model (Tests\Unit\Playground\Crm\Models\Location\Model)
  [x] Model factory make
 
 Model (Tests\Unit\Playground\Crm\Models\Organization\Model)
- [x] Model instance
- [x] Verify model relationships
- [x] Model factory make
-
-Model (Tests\Unit\Playground\Crm\Models\People\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make

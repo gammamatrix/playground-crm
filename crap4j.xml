@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2026-10-11 03:48:10</timestamp>
+  <timestamp>2026-10-12 17:04:46</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>49</methodCount>
+    <methodCount>32</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>59</totalCrap>
+    <totalCrap>42</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -58,17 +58,6 @@
     <method>
       <package>Playground\Crm\Models</package>
       <className>Playground\Crm\Models\Client</className>
-      <methodName>people</methodName>
-      <methodSignature>people(): HasOne</methodSignature>
-      <fullMethod>people(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Client</className>
       <methodName>contacts</methodName>
       <methodSignature>contacts(): HasMany</methodSignature>
       <fullMethod>contacts(): HasMany</fullMethod>
@@ -94,17 +83,6 @@
       <methodName>organizations</methodName>
       <methodSignature>organizations(): HasMany</methodSignature>
       <fullMethod>organizations(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Client</className>
-      <methodName>peoples</methodName>
-      <methodSignature>peoples(): HasMany</methodSignature>
-      <fullMethod>peoples(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -157,17 +135,6 @@
     <method>
       <package>Playground\Crm\Models</package>
       <className>Playground\Crm\Models\Contact</className>
-      <methodName>people</methodName>
-      <methodSignature>people(): HasOne</methodSignature>
-      <fullMethod>people(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Contact</className>
       <methodName>clients</methodName>
       <methodSignature>clients(): HasMany</methodSignature>
       <fullMethod>clients(): HasMany</fullMethod>
@@ -193,17 +160,6 @@
       <methodName>organizations</methodName>
       <methodSignature>organizations(): HasMany</methodSignature>
       <fullMethod>organizations(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Contact</className>
-      <methodName>peoples</methodName>
-      <methodSignature>peoples(): HasMany</methodSignature>
-      <fullMethod>peoples(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -256,17 +212,6 @@
     <method>
       <package>Playground\Crm\Models</package>
       <className>Playground\Crm\Models\Location</className>
-      <methodName>people</methodName>
-      <methodSignature>people(): HasOne</methodSignature>
-      <fullMethod>people(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Location</className>
       <methodName>clients</methodName>
       <methodSignature>clients(): HasMany</methodSignature>
       <fullMethod>clients(): HasMany</fullMethod>
@@ -292,17 +237,6 @@
       <methodName>organizations</methodName>
       <methodSignature>organizations(): HasMany</methodSignature>
       <fullMethod>organizations(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Location</className>
-      <methodName>peoples</methodName>
-      <methodSignature>peoples(): HasMany</methodSignature>
-      <fullMethod>peoples(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -355,17 +289,6 @@
     <method>
       <package>Playground\Crm\Models</package>
       <className>Playground\Crm\Models\Organization</className>
-      <methodName>people</methodName>
-      <methodSignature>people(): HasOne</methodSignature>
-      <fullMethod>people(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Organization</className>
       <methodName>clients</methodName>
       <methodSignature>clients(): HasMany</methodSignature>
       <fullMethod>clients(): HasMany</fullMethod>
@@ -391,116 +314,6 @@
       <methodName>locations</methodName>
       <methodSignature>locations(): HasMany</methodSignature>
       <fullMethod>locations(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\Organization</className>
-      <methodName>peoples</methodName>
-      <methodSignature>peoples(): HasMany</methodSignature>
-      <fullMethod>peoples(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>casts</methodName>
-      <methodSignature>casts(): array</methodSignature>
-      <fullMethod>casts(): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>client</methodName>
-      <methodSignature>client(): HasOne</methodSignature>
-      <fullMethod>client(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>contact</methodName>
-      <methodSignature>contact(): HasOne</methodSignature>
-      <fullMethod>contact(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>location</methodName>
-      <methodSignature>location(): HasOne</methodSignature>
-      <fullMethod>location(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>organization</methodName>
-      <methodSignature>organization(): HasOne</methodSignature>
-      <fullMethod>organization(): HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>clients</methodName>
-      <methodSignature>clients(): HasMany</methodSignature>
-      <fullMethod>clients(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>contacts</methodName>
-      <methodSignature>contacts(): HasMany</methodSignature>
-      <fullMethod>contacts(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>locations</methodName>
-      <methodSignature>locations(): HasMany</methodSignature>
-      <fullMethod>locations(): HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Models</package>
-      <className>Playground\Crm\Models\People</className>
-      <methodName>organizations</methodName>
-      <methodSignature>organizations(): HasMany</methodSignature>
-      <fullMethod>organizations(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
