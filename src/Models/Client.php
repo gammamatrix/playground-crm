@@ -28,7 +28,6 @@ use Playground\Models\Model;
  * @property ?string $contact_id
  * @property ?string $location_id
  * @property ?string $organization_id
- * @property ?string $people_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
@@ -131,7 +130,6 @@ class Client extends Model
         'contact_id' => null,
         'location_id' => null,
         'organization_id' => null,
-        'people_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
@@ -226,7 +224,6 @@ class Client extends Model
         'contact_id',
         'location_id',
         'organization_id',
-        'people_id',
         'canceled_at',
         'closed_at',
         'embargo_at',
@@ -443,20 +440,6 @@ class Client extends Model
     }
 
     /**
-     * The people of the client.
-     *
-     * @return HasOne<People, $this>
-     */
-    public function people(): HasOne
-    {
-        return $this->hasOne(
-            People::class,
-            'id',
-            'people_id'
-        );
-    }
-
-    /**
      * The contacts of the client.
      *
      * @return HasMany<Contact, $this>
@@ -493,20 +476,6 @@ class Client extends Model
     {
         return $this->hasMany(
             Organization::class,
-            'client_id',
-            'id'
-        );
-    }
-
-    /**
-     * The people of the client.
-     *
-     * @return HasMany<People, $this>
-     */
-    public function peoples(): HasMany
-    {
-        return $this->hasMany(
-            People::class,
             'client_id',
             'id'
         );

@@ -24,7 +24,6 @@ class ModelTest extends ModelCase
         'clients',
         'contacts',
         'locations',
-        'peoples',
     ];
 
     protected array $hasOne = [
@@ -35,6 +34,5 @@ class ModelTest extends ModelCase
         'client',
         'contact',
         'location',
-        'people',
     ];
 }

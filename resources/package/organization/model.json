@@ -71,13 +71,6 @@
             "related": "Location",
             "foreignKey": "id",
             "localKey": "location_id"
-        },
-        "people": {
-            "comment": "The people of the organization.",
-            "accessor": "people",
-            "related": "People",
-            "foreignKey": "id",
-            "localKey": "people_id"
         }
     },
     "HasMany": {
@@ -101,13 +94,6 @@
             "related": "Location",
             "foreignKey": "organization_id",
             "localKey": "id"
-        },
-        "peoples": {
-            "comment": "The people of the organization.",
-            "accessor": "peoples",
-            "related": "People",
-            "foreignKey": "organization_id",
-            "localKey": "id"
         }
     },
     "HasManyThrough": [],
@@ -127,7 +113,6 @@
         "client_id": null,
         "contact_id": null,
         "location_id": null,
-        "people_id": null,
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
@@ -308,7 +293,6 @@
         "client_id",
         "contact_id",
         "location_id",
-        "people_id",
         "canceled_at",
         "closed_at",
         "embargo_at",
@@ -468,14 +452,6 @@
             {
                 "column": "location_id",
                 "label": "Location id",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "uuid"
-            },
-            {
-                "column": "people_id",
-                "label": "People id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1249,13 +1225,6 @@
             "type": "uuid"
         },
         {
-            "column": "people_id",
-            "label": "People id",
-            "icon": "",
-            "nullable": false,
-            "type": "uuid"
-        },
-        {
             "column": "created_at",
             "label": "Created At",
             "icon": "",
@@ -1976,21 +1945,6 @@
                 "foreign": {
                     "references": "id",
                     "on": "crm_locations"
-                },
-                "icon": "",
-                "index": true,
-                "nullable": true,
-                "readOnly": false,
-                "unsigned": false,
-                "type": "uuid"
-            },
-            "people_id": {
-                "column": "people_id",
-                "label": "People id",
-                "description": "",
-                "foreign": {
-                    "references": "id",
-                    "on": "crm_people"
                 },
                 "icon": "",
                 "index": true,

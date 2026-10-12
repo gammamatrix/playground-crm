@@ -38,7 +38,6 @@ return new class extends Migration
             $table->uuid('contact_id')->nullable()->index();
             $table->uuid('location_id')->nullable()->index();
             $table->uuid('organization_id')->nullable()->index();
-            $table->uuid('people_id')->nullable()->index();
 
             // Dates
 
