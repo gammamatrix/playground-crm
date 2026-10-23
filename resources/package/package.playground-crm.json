@@ -79,7 +79,9 @@
         "Client": "resources/configurations/playground-crm/client/model.json",
         "Contact": "resources/configurations/playground-crm/contact/model.json",
         "Location": "resources/configurations/playground-crm/location/model.json",
-        "Organization": "resources/configurations/playground-crm/organization/model.json"
+        "Organization": "resources/configurations/playground-crm/organization/model.json",
+        "Tag": "resources/configurations/playground-crm/tag/model.json",
+        "Tagged": "resources/configurations/playground-crm/tagged/model.json"
     },
     "policies": [],
     "requests": [],

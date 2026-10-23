@@ -1,0 +1,16 @@
+{
+    "class": "TagFactory",
+    "config": "playground-crm",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Crm/Models/TagFactory",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "TagFactory",
+    "namespace": "Database/Factories/Playground/Crm/Models",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "model": "Tag",
+    "model_fqdn": "Playground/Crm/Models/Tag",
+    "recipe": "crm",
+    "type": "playground-model",
+    "models": []
+}

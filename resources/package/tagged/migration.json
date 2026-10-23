@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_crm_tagged_table",
+    "config": "playground-crm",
+    "model": "Tagged",
+    "model_fqdn": "Playground/Crm/Models/Tagged",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Tagged",
+    "namespace": "Playground/Crm",
+    "organization": "Playground",
+    "package": "playground-crm",
+    "table": "crm_tagged",
+    "type": "playground-model-tagged",
+    "models": [],
+    "create": true,
+    "update": false
+}

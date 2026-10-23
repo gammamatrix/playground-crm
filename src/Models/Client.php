@@ -11,6 +11,7 @@ namespace Playground\Crm\Models;
 use Database\Factories\Playground\Crm\Models\ClientFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
@@ -478,6 +479,23 @@ class Client extends Model
             Organization::class,
             'client_id',
             'id'
+        );
+    }
+
+    /**
+     * The tags of the client.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'client_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

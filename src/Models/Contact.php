@@ -11,6 +11,7 @@ namespace Playground\Crm\Models;
 use Database\Factories\Playground\Crm\Models\ContactFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
@@ -478,6 +479,23 @@ class Contact extends Model
             Organization::class,
             'contact_id',
             'id'
+        );
+    }
+
+    /**
+     * The tags of the contact.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'contact_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

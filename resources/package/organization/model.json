@@ -96,7 +96,18 @@
             "localKey": "id"
         }
     },
-    "HasManyThrough": [],
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the organization.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "organization_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -2951,6 +2962,7 @@
         "Database/Factories/Playground/Crm/Models/OrganizationFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

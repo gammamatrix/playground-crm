@@ -54,13 +54,15 @@ This package includes [factories](database/factories), models and [migrations](d
 - [Contact](src/Models/Contact.php)
 - [Location](src/Models/Location.php)
 - [Organization](src/Models/Organization.php)
+- [Tag](src/Models/Tag.php)
+- [Tagged](src/Models/Tagged.php)
 
 ## Migrations
 
 All migrations are disabled by default.
 
 See the contents of the published config file: [database/migrations](database/migrations)
-- NOTE: There are 4 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
+- NOTE: There are 6 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
 ```shell
@@ -74,18 +76,7 @@ composer cloc
 ```
 
 ```terminaloutput
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-JSON                            29              0              0          12757
-PHP                             28            342            839           2441
-XML                              3              0              7            215
-YAML                             1              4              0            188
-Markdown                         3             45              0            103
-INI                              1              3              0             12
--------------------------------------------------------------------------------
-SUM:                            65            394            846          15716
--------------------------------------------------------------------------------
+REPLACE_CLOC
 ```
 
 ## PHPStan

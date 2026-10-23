@@ -10,9 +10,10 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Playground\Crm\Models\Client;
 
 /**
- * \Playground\Crm\Models\Client
+ * @see Client
  */
 return new class extends Migration
 {
